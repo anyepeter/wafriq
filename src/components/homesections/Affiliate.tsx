@@ -39,7 +39,7 @@ export default function Affiliate() {
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
                 {t('ctaTitle')}
               </h3>
-              <form className="flex gap-3">
+              <form className="flex flex-col md:flex-row gap-3">
                 <div className="flex-1 relative">
                   <div className="absolute left-4 top-1/2 -translate-y-1/2">
                     <svg
@@ -64,7 +64,7 @@ export default function Affiliate() {
                 </div>
                 <button
                   type="submit"
-                  className="px-6 py-3 bg-blue-500 text-white rounded-xl font-medium hover:bg-blue-600 transition-colors flex items-center gap-2"
+                  className="px-6 py-3 bg-blue-500 text-white justify-center rounded-xl font-medium hover:bg-blue-600 transition-colors flex items-center gap-2"
                 >
                   {t('submit')}
                   <svg
