@@ -35,7 +35,7 @@ export default function Affiliate() {
           </div>
           <div className="w-full relative flex justify-center -mt-15 md:-mt-30 z-10">
           <div className="grid w-full bg-white max-w-[1000px] rounded-2xl p-4 md:grid-cols-2">
-            <div className="p-6 border-b border-gray-200 md:border-r md:border-b-0">
+            <div className="p-2 pb-6 md:p-6 border-b border-gray-200 md:border-r md:border-b-0">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">
                 {t('ctaTitle')}
               </h3>
@@ -83,7 +83,7 @@ export default function Affiliate() {
                 </button>
               </form>
             </div>
-            <div className="p-6 flex flex-col justify-between">
+            <div className="p-2 pt-6 pb-6 md:p-6 flex flex-col justify-between">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {t('becomeAffiliate')}
               </h3>
@@ -93,12 +93,12 @@ export default function Affiliate() {
             </div>
           </div>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 bg-gray-50 rounded-2xl mt-6 p-10">
+          <div className="grid md:grid-cols-2 gap-8 bg-gray-50 rounded-2xl mt-6 p-6 lg:p-10">
             <div>
               <h3 className="text-lg font-bold text-gray-900 mb-4">
                 {t('howItWorks.title')}
               </h3>
-              <ul className="space-y-4 bg-white border border-gray-200 rounded-2xl p-6">
+              <ul className="space-y-4 bg-white border border-gray-200 rounded-2xl p-2 md:p-6">
                 <li className="flex items-center gap-3">
                   <div className="w-8 h-8 flex items-center justify-center flex-shrink-0">
                     <ClipboardList className="w-6 h-6" />
@@ -123,7 +123,7 @@ export default function Affiliate() {
               <h3 className="text-lg font-bold text-gray-900 mb-4">
                 {t('benefits.title')}
               </h3>
-              <ul className="space-y-4 bg-white border border-gray-200 rounded-2xl p-6">
+              <ul className="space-y-4 bg-white border border-gray-200 rounded-2xl p-2 md:p-6">
                 <li className="flex items-center gap-3">
                   <div className="w-8 h-8 flex items-center justify-center flex-shrink-0">
                     <Star className="w-6 h-6" />
