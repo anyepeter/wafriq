@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "pricing": "Pricing",
+    "shop": "Boutique",
+    "partner": "Devenir Partenaire",
+    "demo": "Regarder la démo",
+    "cta": "Commandez Maintenant"
+  },
+  "hero": {
+    "headline": "La solution",
+    "headlineHighlight": "tout-en-un",
+    "headlineContinue": "pour encaisser, gérer vos stocks et booster vos ventes directement sur",
+    "whatsapp": "Whatsapp",
+    "description": "Révolutionnez votre quotidien avec un système de caisse innovant, conçu pour les commerces africains. Il simplifie la gestion des transactions et améliore l'expérience client.",
+    "ctaPrimary": "Commandez Maintenant",
+    "ctaSecondary": "Découvrir comment ça marche",
+    "trustTitle": "Ceux qui nous font confiance"
+  },
+  "features": {
+    "badge": "Fonctionnalités principales",
+    "title": "Tout ce qu'il vous faut pour gérer et développer votre commerce",
+    "billing": {
+      "title": "Facturation rapide et professionnelle",
+      "description": "Fini les tickets manuscrits. Créez des factures propres et envoyez-les en un clic à vos clients : par impression ou sur WhatsApp."
+    },
+    "sales": {
+      "title": "Ventes sous surveillance",
+      "description": "Quels sont vos meilleurs produits ? Quels jours vous vendez le plus ? Wafriq vous montre tout, automatiquement."
+    },
+    "stock": {
+      "title": "Stock toujours sous contrôle",
+      "description": "Ne perdez plus un seul produit de vue. Soyez alerté avant les ruptures et suivez chaque entrée ou sortie en temps réel."
+    },
+    "staff": {
+      "title": "Suivi du personnel sans prise de tête",
+      "description": "Créez un compte pour chaque employé, limitez leurs accès, suivez leurs ventes. Transparence et confiance au cœur du système."
+    },
+    "whatsapp": {
+      "title": "Intégration WhatsApp",
+      "description": "Créez des tickets de caisse ou des factures en quelques secondes sur Whatsapp, imprimez les ou envoyez-les directement à vos clients."
+    },
+    "analytics": {
+      "title": "Analyse en temps réel",
+      "description": "Suivez vos performances avec des tableaux de bord intuitifs. Prenez des décisions éclairées basées sur des données concrètes."
+    }
+  },
+  "footer": {
+    "home": {
+      "title": "Accueil",
+      "features": "Fonctionnalités",
+      "pricing": "Pricing",
+      "shop": "Boutique",
+      "faq": "FAQ"
+    },
+    "features": {
+      "title": "Fonctionnalités",
+      "billing": "Facturation",
+      "stock": "Gestion de Stocks",
+      "whatsapp": "Intégration WhatsApp"
+    },
+    "shop": {
+      "title": "Boutique",
+      "printer": "Imprimante Thermique",
+      "stand": "Stand pour caisse",
+      "tablet": "Tablette de Vente"
+    },
+    "affiliate": {
+      "title": "Programme D'Affiliation",
+      "partner": "Devenir Partenaire"
+    },
+    "copyright": "© 2025 Wafriq. All rights reserved.",
+    "privacy": "Privacy & Policy",
+    "legal": "Legal",
+    "terms": "Terms & Condition",
+    "goToTop": "Go to top"
+  },
+  "mobileMenu": {
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "whyChoose": {
+    "badge": "Pourquoi choisir Wafriq ?",
+    "title": "Bien plus qu'un simple outil. Wafriq, c'est votre nouveau partenaire de croissance.",
+    "reasons": {
+      "local": {
+        "number": "01",
+        "title": "Conçu pour les réalités locales",
+        "description": "Pas besoin d'outils compliqués. Wafriq fonctionne même dans les zones à faible connectivité."
+      },
+      "easy": {
+        "number": "02",
+        "title": "Facile à prendre en main",
+        "description": "Aucune compétence technique requise. Installez, configurez, commencez à vendre. C'est aussi simple que ça."
+      },
+      "whatsapp": {
+        "number": "03",
+        "title": "Intégration avec WhatsApp",
+        "description": "Gérez vos ventes, discutez avec vos clients, envoyez des reçus, directement via WhatsApp."
+      },
+      "tools": {
+        "number": "04",
+        "title": "Des outils puissants pour mieux vendre",
+        "description": "Facturation rapide, gestion automatique du stock, suivi des ventes en temps réel, rapports accessibles et clairs."
+      },
+      "support": {
+        "number": "05",
+        "title": "Support local et humain",
+        "description": "Besoin d'aide ? Notre équipe vous accompagne, vous forme et vous soutient à chaque étape."
+      }
+    }
+  },
+  "pricing": {
+    "badge": "Plans Tarifaires",
+    "title": "Gérez votre business comme un pro à partir de",
+    "titleHighlight": "5,000 FCFA",
+    "monthly": "Mensuel",
+    "annual": "Annuel",
+    "discount": "-30%",
+    "perMonth": "/Mois",
+    "perYear": "/An",
+    "cta": "Commandez Maintenant",
+    "plans": {
+      "standard": {
+        "name": "Formule Standard",
+        "description": "Idéal pour démarrer simplement votre activité",
+        "priceMonthly": "5,000 FCFA",
+        "priceAnnual": "42,000 FCFA"
+      },
+      "pro": {
+        "name": "Formule Pro",
+        "description": "Pour les commerces qui veulent aller plus loin",
+        "priceMonthly": "10,000 FCFA",
+        "priceAnnual": "84,000 FCFA"
+      },
+      "expert": {
+        "name": "Formule Expert",
+        "description": "Pack complet pour s'équiper totalement",
+        "priceMonthly": "15,000 FCFA",
+        "priceAnnual": "126,000 FCFA"
+      }
+    },
+    "features": {
+      "billing": "Module de facturation",
+      "payments": "Gestion des paiements",
+      "expenses": "Suivi des dépenses",
+      "reports": "Rapports financiers",
+      "budget": "Planification budgétaire",
+      "stats": "Statistiques de vente",
+      "profitability": "Analyse de rentabilité",
+      "forecasts": "Prévisions financières",
+      "resources": "Gestion des ressources financières"
+    }
+  },
+  "shop": {
+    "badge": "Notre Boutique",
+    "title": "Équipez-vous comme un pro, sans vous ruiner.",
+    "cta": "Commandez Maintenant",
+    "viewMore": "Voir plus de produits",
+    "startingFrom": "À partir de",
+    "products": {
+      "printer": {
+        "name": "Imprimante thermique",
+        "price": "25 000 FCFA",
+        "description": "Imprimez vos tickets rapidement, avec un minimum d'entretien."
+      },
+      "stand": {
+        "name": "Stand pour caisse",
+        "price": "10 000 FCFA",
+        "description": "Un support élégant et pratique pour votre point de vente."
+      },
+      "tablet": {
+        "name": "Tablette de vente Android",
+        "price": "40 000 FCFA",
+        "description": "Gérez votre commerce avec fluidité, où que vous soyez."
+      }
+    }
+  },
+  "faq": {
+    "title": "Foire aux questions",
+    "subtitle": "Vous avez encore des questions ? Contactez notre équipe à",
+    "email": "support@wafriq.com",
+    "questions": {
+      "internet": {
+        "question": "Est-ce que je dois avoir une connexion Internet pour utiliser Wafriq ?",
+        "answer": "Pas forcément. L'application fonctionne même en mode hors ligne pour certaines fonctions de base (facturation, encaissement). Vos données seront synchronisées dès que vous serez reconnecté."
+      },
+      "devices": {
+        "question": "Quels sont les téléphones ou tablettes compatibles ?",
+        "answer": "Wafriq fonctionne sur tous les appareils Android (version 6.0 et plus) et iOS (version 12 et plus). Nous recommandons un écran d'au moins 5 pouces pour une meilleure expérience."
+      },
+      "hardware": {
+        "question": "Comment puis-je acheter le matériel (imprimante, tiroir-caisse, etc.) ?",
+        "answer": "Vous pouvez commander directement depuis notre boutique en ligne ou nous contacter pour une livraison personnalisée. Nous offrons également des packs complets à prix réduit."
+      },
+      "restaurants": {
+        "question": "Wafriq est-il adapté aux restaurants ?",
+        "answer": "Absolument ! Wafriq dispose de fonctionnalités spécifiques pour la restauration : gestion des tables, commandes en cuisine, pourboires, et plus encore."
+      },
+      "affiliate": {
+        "question": "Comment fonctionne le programme d'affiliation ?",
+        "answer": "Inscrivez-vous gratuitement, partagez votre lien unique, et gagnez jusqu'à 20% de commission sur chaque vente. Les paiements sont effectués mensuellement."
+      }
+    }
+  },
+  "affiliate": {
+    "title": "Recommandez Wafriq. Gagnez de l'argent. C'est aussi simple que ça.",
+    "description": "Vous connaissez des commerçants, restaurateurs ou vendeurs qui galèrent encore avec des carnets ? Aidez-les à passer au digital et soyez récompensé pour chaque inscription.",
+    "emailPlaceholder": "Entrez votre addresse mail",
+    "submit": "Envoyer",
+    "ctaTitle": "Prêt à gagner en partageant un outil utile ?",
+    "becomeAffiliate": "Devenir affilié maintenant",
+    "affiliateSubtitle": "L'inscription est gratuite. Les gains sont réels.",
+    "howItWorks": {
+      "title": "Comment ça fonctionne ?",
+      "step1": "Créez votre compte affilié",
+      "step2": "Partagez autour de vous",
+      "step3": "Touchez une commission pour chaque vente"
+    },
+    "benefits": {
+      "title": "Ce que vous gagnez !",
+      "commission": "Jusqu'à 20% de commission",
+      "bonus": "Bonus supplémentaires si vous atteignez des paliers annuels",
+      "tracking": "Suivi en temps réel de vos gains et de vos affiliés"
+    }
+  }
+}

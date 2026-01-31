@@ -1,0 +1,106 @@
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+
+type TrustLogo = {
+  name: string;
+  src: string;
+};
+
+export default function Hero() {
+  const t = useTranslations('hero');
+
+  const trustLogos: ReadonlyArray<TrustLogo> = [
+    { name: 'IoTera', src: '/images/iotera.png' },
+    { name: 'CloudSyncer', src: '/images/cloudSyncer.png' },
+    { name: 'CodeNova', src: '/images/codenova.png' },
+    { name: 'DevVault', src: '/images/devvault.png' },
+    { name: 'RocketRunner', src: '/images/rockerrunner.png' },
+  ];
+  return (
+    <section className="relative overflow-hidden bg-white">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 pt-16">
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl lg:text-[2.4rem] [@media(min-width:1100px)]:text-[2.8rem]  [@media(min-width:1200px)]:text-[3.1rem] [@media(min-width:1370px)]:text-6xl font-bold leading-tight text-gray-900">
+              {t('headline')}{' '}
+              <span className="text-blue-500">{t('headlineHighlight')}</span>{' '}
+              {t('headlineContinue')}{' '}
+              <span className="text-green-500">{t('whatsapp')}</span>.
+            </h1>
+            <p className="mt-6 text-xl text-gray-600 max-w-xl mx-auto lg:mx-0">
+              {t('description')}
+            </p>
+            <div className="mt-8 lg:mt-6 xl:mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Button
+                asChild
+                size="lg"
+                className="px-6 lg:px-3 xl:px-6 bg-blue-500 text-white hover:bg-blue-600 hover:scale-105 transition-all duration-300 ease-in-out"
+              >
+                <a href="#order">{t('ctaPrimary')}</a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="px-6 lg:px-3 xl:px-6 hover:bg-gray-100 hover:scale-105 transition-all duration-300 ease-in-out"
+              >
+                <a href="#demo" className="gap-2">
+                  <svg
+                    className="w-5 h-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  {t('ctaSecondary')}
+                </a>
+              </Button>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="relative w-full max-w-lg mx-auto lg:max-w-none">
+              <div className="relative z-10">
+                <Image
+                  src="/images/hero-image.png"
+                  alt="Wafriq POS System"
+                  width={600}
+                  height={600}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-mt-14 lg:-mt-26 bg-black py-12 pt-18 lg:py-14">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-white text-lg md:text-xl lg:text-2xl font-medium mb-8 text-center lg:text-left italic">
+            {t('trustTitle')}
+          </p>
+          <div className="flex flex-wrap items-center justify-center lg:justify-between gap-8 lg:gap-10">
+            {trustLogos.map((logo) => (
+              <div
+                key={logo.name}
+                className="flex items-center opacity-70 hover:opacity-100 transition-opacity"
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={140}
+                  height={80}
+                  className="h-8 md:h-10 lg:h-12 w-auto object-contain brightness-0 invert"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "shop": "Shop",
+    "partner": "Become a Partner",
+    "demo": "Watch Demo",
+    "cta": "Order Now"
+  },
+  "hero": {
+    "headline": "The",
+    "headlineHighlight": "all-in-one",
+    "headlineContinue": "solution to collect payments, manage your stock and boost your sales directly on",
+    "whatsapp": "Whatsapp",
+    "description": "Revolutionize your daily routine with an innovative POS system, designed for African businesses. It simplifies transaction management and enhances customer experience.",
+    "ctaPrimary": "Order Now",
+    "ctaSecondary": "See how it works",
+    "trustTitle": "Those who trust us"
+  },
+  "features": {
+    "badge": "Key Features",
+    "title": "Everything you need to manage and grow your business",
+    "billing": {
+      "title": "Fast and Professional Billing",
+      "description": "No more handwritten tickets. Create clean invoices and send them with one click to your customers: by printing or on WhatsApp."
+    },
+    "sales": {
+      "title": "Sales Under Control",
+      "description": "What are your best products? Which days do you sell the most? Wafriq shows you everything, automatically."
+    },
+    "stock": {
+      "title": "Stock Always Under Control",
+      "description": "Never lose sight of a single product. Be alerted before stockouts and track every entry or exit in real time."
+    },
+    "staff": {
+      "title": "Hassle-Free Staff Tracking",
+      "description": "Create an account for each employee, limit their access, track their sales. Transparency and trust at the heart of the system."
+    },
+    "whatsapp": {
+      "title": "WhatsApp Integration",
+      "description": "Create cash tickets or invoices in seconds on WhatsApp, print them or send them directly to your customers."
+    },
+    "analytics": {
+      "title": "Real-Time Analytics",
+      "description": "Track your performance with intuitive dashboards. Make informed decisions based on concrete data."
+    }
+  },
+  "footer": {
+    "home": {
+      "title": "Home",
+      "features": "Features",
+      "pricing": "Pricing",
+      "shop": "Shop",
+      "faq": "FAQ"
+    },
+    "features": {
+      "title": "Features",
+      "billing": "Billing",
+      "stock": "Stock Management",
+      "whatsapp": "WhatsApp Integration"
+    },
+    "shop": {
+      "title": "Shop",
+      "printer": "Thermal Printer",
+      "stand": "Cash Register Stand",
+      "tablet": "Sales Tablet"
+    },
+    "affiliate": {
+      "title": "Affiliate Program",
+      "partner": "Become a Partner"
+    },
+    "copyright": "© 2025 Wafriq. All rights reserved.",
+    "privacy": "Privacy & Policy",
+    "legal": "Legal",
+    "terms": "Terms & Condition",
+    "goToTop": "Go to top"
+  },
+  "mobileMenu": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "whyChoose": {
+    "badge": "Why choose Wafriq?",
+    "title": "More than just a tool. Wafriq is your new growth partner.",
+    "reasons": {
+      "local": {
+        "number": "01",
+        "title": "Designed for local realities",
+        "description": "No need for complicated tools. Wafriq works even in areas with low connectivity."
+      },
+      "easy": {
+        "number": "02",
+        "title": "Easy to get started",
+        "description": "No technical skills required. Install, configure, start selling. It's that simple."
+      },
+      "whatsapp": {
+        "number": "03",
+        "title": "WhatsApp Integration",
+        "description": "Manage your sales, chat with your customers, send receipts, directly via WhatsApp."
+      },
+      "tools": {
+        "number": "04",
+        "title": "Powerful tools to sell better",
+        "description": "Fast billing, automatic stock management, real-time sales tracking, accessible and clear reports."
+      },
+      "support": {
+        "number": "05",
+        "title": "Local and human support",
+        "description": "Need help? Our team supports you, trains you and assists you at every step."
+      }
+    }
+  },
+  "pricing": {
+    "badge": "Pricing Plans",
+    "title": "Manage your business like a pro starting from",
+    "titleHighlight": "5,000 FCFA",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "discount": "-30%",
+    "perMonth": "/Month",
+    "perYear": "/Year",
+    "cta": "Order Now",
+    "plans": {
+      "standard": {
+        "name": "Standard Plan",
+        "description": "Ideal to simply start your business",
+        "priceMonthly": "5,000 FCFA",
+        "priceAnnual": "42,000 FCFA"
+      },
+      "pro": {
+        "name": "Pro Plan",
+        "description": "For businesses that want to go further",
+        "priceMonthly": "10,000 FCFA",
+        "priceAnnual": "84,000 FCFA"
+      },
+      "expert": {
+        "name": "Expert Plan",
+        "description": "Complete package to fully equip yourself",
+        "priceMonthly": "15,000 FCFA",
+        "priceAnnual": "126,000 FCFA"
+      }
+    },
+    "features": {
+      "billing": "Billing module",
+      "payments": "Payment management",
+      "expenses": "Expense tracking",
+      "reports": "Financial reports",
+      "budget": "Budget planning",
+      "stats": "Sales statistics",
+      "profitability": "Profitability analysis",
+      "forecasts": "Financial forecasts",
+      "resources": "Financial resource management"
+    }
+  },
+  "shop": {
+    "badge": "Our Shop",
+    "title": "Equip yourself like a pro, without breaking the bank.",
+    "cta": "Order Now",
+    "viewMore": "View more products",
+    "startingFrom": "Starting from",
+    "products": {
+      "printer": {
+        "name": "Thermal Printer",
+        "price": "25,000 FCFA",
+        "description": "Print your tickets quickly, with minimal maintenance."
+      },
+      "stand": {
+        "name": "Cash Register Stand",
+        "price": "10,000 FCFA",
+        "description": "An elegant and practical stand for your point of sale."
+      },
+      "tablet": {
+        "name": "Android Sales Tablet",
+        "price": "40,000 FCFA",
+        "description": "Manage your business smoothly, wherever you are."
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Still have questions? Contact our team at",
+    "email": "support@wafriq.com",
+    "questions": {
+      "internet": {
+        "question": "Do I need an Internet connection to use Wafriq?",
+        "answer": "Not necessarily. The app works even offline for basic functions (billing, checkout). Your data will be synced as soon as you reconnect."
+      },
+      "devices": {
+        "question": "Which phones or tablets are compatible?",
+        "answer": "Wafriq works on all Android devices (version 6.0 and above) and iOS (version 12 and above). We recommend a screen of at least 5 inches for a better experience."
+      },
+      "hardware": {
+        "question": "How can I purchase hardware (printer, cash drawer, etc.)?",
+        "answer": "You can order directly from our online store or contact us for personalized delivery. We also offer complete packages at reduced prices."
+      },
+      "restaurants": {
+        "question": "Is Wafriq suitable for restaurants?",
+        "answer": "Absolutely! Wafriq has specific features for catering: table management, kitchen orders, tips, and more."
+      },
+      "affiliate": {
+        "question": "How does the affiliate program work?",
+        "answer": "Sign up for free, share your unique link, and earn up to 20% commission on each sale. Payments are made monthly."
+      }
+    }
+  },
+  "affiliate": {
+    "title": "Recommend Wafriq. Earn money. It's that simple.",
+    "description": "Do you know merchants, restaurateurs or vendors who still struggle with notebooks? Help them go digital and get rewarded for each signup.",
+    "emailPlaceholder": "Enter your email address",
+    "submit": "Submit",
+    "ctaTitle": "Ready to earn by sharing a useful tool?",
+    "becomeAffiliate": "Become an affiliate now",
+    "affiliateSubtitle": "Registration is free. The earnings are real.",
+    "howItWorks": {
+      "title": "How does it work?",
+      "step1": "Create your affiliate account",
+      "step2": "Share around you",
+      "step3": "Get a commission for each sale"
+    },
+    "benefits": {
+      "title": "What you earn!",
+      "commission": "Up to 20% commission",
+      "bonus": "Additional bonuses if you reach annual milestones",
+      "tracking": "Real-time tracking of your earnings and affiliates"
+    }
+  }
+}
