@@ -6,7 +6,7 @@ import { routing } from '@/i18n/routing';
 import { Manrope, DM_Sans } from 'next/font/google';
 import '../globals.css';
 
-// Configure fonts
+
 const manrope = Manrope({
   subsets: ['latin'],
   variable: '--font-manrope',
@@ -65,9 +65,7 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as 'fr' | 'en')) {
     notFound();
   }
-
   const messages = await getMessages();
-
   return (
     <html lang={locale} className={`${manrope.variable} ${dmSans.variable}`}>
       <body className="antialiased">

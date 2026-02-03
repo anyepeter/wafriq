@@ -20,7 +20,7 @@ export default function Navbar(): JSX.Element {
     { href: '/#pricing', label: t('pricing') },
     { href: '/shop', label: t('shop') },
     { href: '/members', label: t('partner') },
-    { href: '/#demo', label: t('demo') },
+    { href: '/demo', label: t('demo') },
     { href: '/contact', label: t('contact') },
   ];
   return (

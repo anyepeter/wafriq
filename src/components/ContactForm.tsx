@@ -1,8 +1,6 @@
-'use client';
-
 import Image from 'next/image';
 import { LocateFixed, Mail, Phone, User, UserCog } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Button } from './ui/button';
 
 
@@ -16,8 +14,19 @@ type IconInputProps = {
 }
 
 
-export default function ContactForm() {
-    const t = useTranslations('contactPage');
+export default async function ContactForm() {
+    const t = await getTranslations('contactPage');
+
+    async function submitContactForm(formData: FormData) {
+        'use server';
+        const rawFormData = {
+            fullName: formData.get('fullName'),
+            phone: formData.get('phone'),
+            email: formData.get('email'),
+            city: formData.get('city'),
+            profession: formData.get('profession'),
+        };
+    }
     return (
         <section className="min-h-[80vh] flex items-center justify-center my-10 lg:my-12">
             <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 w-full mb-10">
@@ -50,7 +59,7 @@ export default function ContactForm() {
                         <p className="text-gray-600 text-center mb-8 text-sm">
                             {t('description')}
                         </p>
-                        <form className="space-y-4">
+                        <form action={submitContactForm} className="space-y-4">
                             <IconInput
                                 id="fullName"
                                 name="fullName"

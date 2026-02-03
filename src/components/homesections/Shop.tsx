@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { MoveRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from '@/i18n/navigation';
 import ProductCard from '@/components/ProductCard';
 
 
@@ -70,10 +71,10 @@ export default function Shop() {
               size="lg"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors"
             >
-              <a href="/shop">
+              <Link href="/shop">
                 {t('viewMore')}
                 <MoveRight className="w-5 h-5" />
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

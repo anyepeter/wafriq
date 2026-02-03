@@ -132,19 +132,19 @@ export default function Footer() {
           </p>
           <div className="flex flex-wrap items-center gap-6">
             <a
-              href="#privacy"
+              href="/privacy"
               className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               {t('privacy')}
             </a>
             <a
-              href="#legal"
+              href="/legal"
               className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               {t('legal')}
             </a>
             <a
-              href="#terms"
+              href="/terms"
               className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               {t('terms')}
