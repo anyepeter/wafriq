@@ -151,10 +151,10 @@ function FeatureCard({
         />
       </div>
       <div className='flex flex-col w-full h-full justify-center gap-3'>
-        <h3 className="text-2xl font-bold text-gray-900 leading-snug">
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug">
           {title}
         </h3>
-        <p className="text-gray-600 text-[16px] leading-relaxed">
+        <p className="text-gray-600 text-[14px] sm:text-[16px] leading-relaxed">
           {description}
         </p>
       </div>

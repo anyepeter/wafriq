@@ -1,16 +1,15 @@
 'use client';
 
-import { useState } from 'react';
-import { useTranslations } from 'next-intl';
 import { Plus, Minus } from 'lucide-react';
+import { useState, JSX } from 'react';
+import { useTranslations } from 'next-intl';
 
-export default function FaqAccordion() {
+
+export default function FaqAccordion(): JSX.Element {
   const t = useTranslations('faq');
   const [openIndex, setOpenIndex] = useState<number>(0);
-
   const questions = ['internet', 'devices', 'hardware', 'restaurants', 'affiliate'];
-
-  const toggleQuestion = (index: number) => {
+  const toggleQuestion = (index: number): void => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 

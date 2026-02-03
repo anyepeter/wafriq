@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     description:
       'Révolutionnez votre quotidien avec un système de caisse innovant, conçu pour les commerces africains.',
   },
+  icons: {
+    icon: '/images/Logo.png',
+  },
 };
 
 interface LocaleLayoutProps {

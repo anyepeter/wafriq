@@ -5,6 +5,7 @@
     "shop": "Boutique",
     "partner": "Devenir Partenaire",
     "demo": "Regarder la démo",
+    "contact": "Nous Contacter",
     "cta": "Commandez Maintenant"
   },
   "hero": {
@@ -222,6 +223,98 @@
       "commission": "Jusqu'à 20% de commission",
       "bonus": "Bonus supplémentaires si vous atteignez des paliers annuels",
       "tracking": "Suivi en temps réel de vos gains et de vos affiliés"
+    }
+  },
+  "membersPage": {
+    "nav": {
+      "features": "Fonctionnalités",
+      "pricing": "Pricing",
+      "shop": "Boutique",
+      "affiliate": "Partenariat Affiliation",
+      "cta": "Commencez Maintenant"
+    },
+    "hero": {
+      "titleStart": "Devenez partenaire de Wafriq, recommandez notre solution à votre entourage et gagnez jusqu'à",
+      "highlight": "25,000 FCFA",
+      "titleEnd": "à chaque vente.",
+      "description": "Recommandez surtout à tout commerçant, client ou tout type de commerce susceptible d'utiliser Walfriq. Pour tout client inscrit, vous recevez une commission sur chaque vente. C'est simple, juste et transparent.",
+      "cta": "Adhérer après visionnage"
+    },
+    "tagline": {
+      "title": "Recommandez Wafriq",
+      "subtitle": "Gagnez de l'argent. C'est aussi simple que ça."
+    }
+  },
+  "shopPage": {
+    "title": "Équipez votre point de vente avec du matériel",
+    "titleHighlight": "100% compatible",
+    "titleEnd": "Wafriq",
+    "description": "Lecteur de codes-barres, tablettes de vente... Découvrez tous les équipements professionnels sélectionnés pour vous.",
+    "startingFrom": "À partir de",
+    "cta": "Commandez Maintenant",
+    "products": {
+      "printer": {
+        "name": "Imprimante thermique",
+        "price": "25 000 FCFA",
+        "description": "Imprimez vos tickets rapidement, avec un minimum d'entretien."
+      },
+      "stand": {
+        "name": "Stand pour caisse",
+        "price": "10 000 FCFA",
+        "description": "Un support élégant et pratique pour votre point de vente."
+      },
+      "tablet": {
+        "name": "Tablette de vente Android",
+        "price": "40 000 FCFA",
+        "description": "Gérez votre commerce avec fluidité, où que vous soyez."
+      },
+      "barcodeReader": {
+        "name": "Lecteur de codes-barres",
+        "price": "15 000 FCFA",
+        "description": "Scannez vos produits rapidement et de manière fiable."
+      },
+      "cashDrawer": {
+        "name": "Écran de caisse",
+        "price": "20 000 FCFA",
+        "description": "Tiroir-caisse sécurisé pour votre point de vente."
+      },
+      "contactlessPayment": {
+        "name": "Système de paiement sans contact",
+        "price": "30 000 FCFA",
+        "description": "Acceptez les paiements par carte et mobile money."
+      },
+      "software1": {
+        "name": "Logiciel de gestion commerciale",
+        "price": "50 000 FCFA",
+        "description": "Solution complète pour la gestion de vos stocks."
+      },
+      "software2": {
+        "name": "Logiciel de gestion commerciale",
+        "price": "50 000 FCFA",
+        "description": "Simplifiez la gestion de vos ventes et de votre stock."
+      },
+      "software3": {
+        "name": "Logiciel de gestion commerciale",
+        "price": "50 000 FCFA",
+        "description": "Solution tout-en-un pour votre entreprise."
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Rejoignez le programme d'affiliation Wafriq",
+    "description": "Prêt à gagner en recommandant un outil utile ? Remplissez le formulaire ci-dessous pour devenir affilié maintenant !",
+    "form": {
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Entrez votre nom complet",
+      "phone": "Numéro de téléphone",
+      "phonePlaceholder": "Entrez votre numéro de téléphone",
+      "email": "Adresse mail",
+      "emailPlaceholder": "Entrez votre adresse mail",
+      "city": "Ville / Région",
+      "cityPlaceholder": "Votre ville / région",
+      "profession": "Profession (facultatif)",
+      "professionPlaceholder": "Profession ou activité actuelle (facultatif)",
+      "submit": "Envoyer"
     }
   }
 }

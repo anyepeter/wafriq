@@ -10,31 +10,31 @@ export default function Footer() {
     {
       title: t('home.title'),
       links: [
-        { label: t('home.features'), href: '#features' },
-        { label: t('home.pricing'), href: '#pricing' },
-        { label: t('home.shop'), href: '#shop' },
-        { label: t('home.faq'), href: '#faq' },
+        { label: t('home.features'), href: '/#features' },
+        { label: t('home.pricing'), href: '/#pricing' },
+        { label: t('home.shop'), href: '/#shop' },
+        { label: t('home.faq'), href: '/#faq' },
       ],
     },
     {
       title: t('features.title'),
       links: [
-        { label: t('features.billing'), href: '#billing' },
-        { label: t('features.stock'), href: '#stock' },
-        { label: t('features.whatsapp'), href: '#whatsapp' },
+        { label: t('features.billing'), href: '/#features' },
+        { label: t('features.stock'), href: '/#features' },
+        { label: t('features.whatsapp'), href: '/#features' },
       ],
     },
     {
       title: t('shop.title'),
       links: [
-        { label: t('shop.printer'), href: '#printer' },
-        { label: t('shop.stand'), href: '#stand' },
-        { label: t('shop.tablet'), href: '#tablet' },
+        { label: t('shop.printer'), href: '/shop' },
+        { label: t('shop.stand'), href: '/shop' },
+        { label: t('shop.tablet'), href: '/shop' },
       ],
     },
     {
       title: t('affiliate.title'),
-      links: [{ label: t('affiliate.partner'), href: '#partner' }],
+      links: [{ label: t('affiliate.partner'), href: '/members' }],
     },
   ];
 
@@ -113,12 +113,12 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {section.links.map((link) => (
                     <li key={link.label}>
-                      <a
+                      <Link
                         href={link.href}
                         className="text-sm text-gray-400 hover:text-white transition-colors"
                       >
                         {link.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

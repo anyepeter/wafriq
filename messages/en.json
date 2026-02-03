@@ -5,6 +5,7 @@
     "shop": "Shop",
     "partner": "Become a Partner",
     "demo": "Watch Demo",
+    "contact": "Contact Us",
     "cta": "Order Now"
   },
   "hero": {
@@ -222,6 +223,98 @@
       "commission": "Up to 20% commission",
       "bonus": "Additional bonuses if you reach annual milestones",
       "tracking": "Real-time tracking of your earnings and affiliates"
+    }
+  },
+  "membersPage": {
+    "nav": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "shop": "Shop",
+      "affiliate": "Affiliate Partnership",
+      "cta": "Get Started Now"
+    },
+    "hero": {
+      "titleStart": "Become a partner of Wafriq, recommend our solution to your network and earn up to",
+      "highlight": "25,000 FCFA",
+      "titleEnd": "with each sale.",
+      "description": "Recommend Wafriq to any merchant or business. For any customer who signs up, you receive a commission on each sale. It's simple, fair and transparent.",
+      "cta": "Join after watching"
+    },
+    "tagline": {
+      "title": "Recommend Wafriq",
+      "subtitle": "Earn money. It's that simple."
+    }
+  },
+  "shopPage": {
+    "title": "Equip your point of sale with",
+    "titleHighlight": "100% compatible",
+    "titleEnd": "Wafriq equipment",
+    "description": "Barcode readers, sales tablets... Discover all our professional equipment selected for you.",
+    "startingFrom": "Starting from",
+    "cta": "Order Now",
+    "products": {
+      "printer": {
+        "name": "Thermal Printer",
+        "price": "25,000 FCFA",
+        "description": "Print your tickets quickly, with minimal maintenance."
+      },
+      "stand": {
+        "name": "Cash Register Stand",
+        "price": "10,000 FCFA",
+        "description": "An elegant and practical stand for your point of sale."
+      },
+      "tablet": {
+        "name": "Android Sales Tablet",
+        "price": "40,000 FCFA",
+        "description": "Manage your business smoothly, wherever you are."
+      },
+      "barcodeReader": {
+        "name": "Barcode Reader",
+        "price": "15,000 FCFA",
+        "description": "Scan products quickly and reliably."
+      },
+      "cashDrawer": {
+        "name": "Cash Drawer",
+        "price": "20,000 FCFA",
+        "description": "Secure cash drawer for your point of sale."
+      },
+      "contactlessPayment": {
+        "name": "Contactless Payment System",
+        "price": "30,000 FCFA",
+        "description": "Accept payments via card and mobile money."
+      },
+      "software1": {
+        "name": "Commercial Management Software",
+        "price": "50,000 FCFA",
+        "description": "Complete solution for inventory management."
+      },
+      "software2": {
+        "name": "Commercial Management Software",
+        "price": "50,000 FCFA",
+        "description": "Simplify the management of your sales and inventory."
+      },
+      "software3": {
+        "name": "Commercial Management Software",
+        "price": "50,000 FCFA",
+        "description": "All-in-one solution for your business."
+      }
+    }
+  },
+  "contactPage": {
+    "title": "Join the Wafriq Affiliate Program",
+    "description": "Ready to earn by recommending a useful tool? Fill out the form below to become an affiliate now!",
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "city": "City / Region",
+      "cityPlaceholder": "Your city / region",
+      "profession": "Profession or current activity (optional)",
+      "professionPlaceholder": "Profession or current activity (optional)",
+      "submit": "Send"
     }
   }
 }

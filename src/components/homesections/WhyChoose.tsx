@@ -59,10 +59,10 @@ export default function WhyChoose() {
                     </span>
                   </div>
                   <div className="flex-1 min-w-0 py-2">
-                    <h3 className="font-bold mb-1">
+                    <h3 className="font-bold mb-1 text-base">
                       {t(`reasons.${reason.key}.title`)}
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm sm:text-base">
                       {t(`reasons.${reason.key}.description`)}
                     </p>
                   </div>
