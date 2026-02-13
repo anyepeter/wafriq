@@ -4,9 +4,10 @@ import { MoveRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
 import ProductCard from '@/components/ProductCard';
+import { getWhatsAppUrl } from '@/lib/whatsapp';
 
 
-type ProductKey = 'printer' | 'stand' | 'tablet';
+type ProductKey = 'tablet' | 'printer' | 'stand' | 'barcodeReader';
 
 type Product = {
   key: ProductKey;
@@ -16,7 +17,12 @@ type Product = {
 
 export default function Shop() {
   const t = useTranslations('shop');
+  const w = useTranslations('whatsappMessages');
   const products: readonly Product[] = [
+    {
+      key: 'tablet',
+      image: '/images/image-1.png',
+    },
     {
       key: 'printer',
       image: '/images/image-3.png',
@@ -26,8 +32,8 @@ export default function Shop() {
       image: '/images/image-2.png',
     },
     {
-      key: 'tablet',
-      image: '/images/image-1.png',
+      key: 'barcodeReader',
+      image: '/images/image-4.png',
     },
   ];
   return (
@@ -47,7 +53,7 @@ export default function Shop() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              {t('title')}
+              {t('landingTitle')}
             </h2>
           </div>
           <div className="flex justify-center items-center">
@@ -61,6 +67,7 @@ export default function Shop() {
                   price={t(`products.${product.key}.price`)}
                   startingFromText={t('startingFrom')}
                   ctaText={t('cta')}
+                  whatsappUrl={getWhatsAppUrl(w(`products.${product.key}`))}
                 />
               ))}
             </div>

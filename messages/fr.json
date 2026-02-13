@@ -62,15 +62,16 @@
     },
     "shop": {
       "title": "Boutique",
+      "tablet": "Tablette de Vente",
       "printer": "Imprimante Thermique",
       "stand": "Stand pour caisse",
-      "tablet": "Tablette de Vente"
+      "barcodeReader": "Lecteur de codes-barres"
     },
     "affiliate": {
       "title": "Programme D'Affiliation",
       "partner": "Devenir Partenaire"
     },
-    "copyright": "© 2025 Wafriq. All rights reserved.",
+    "copyright": "All rights reserved.",
     "privacy": "Privacy & Policy",
     "legal": "Legal",
     "terms": "Terms & Condition",
@@ -155,11 +156,20 @@
   },
   "shop": {
     "badge": "Notre Boutique",
-    "title": "Équipez-vous comme un pro, sans vous ruiner.",
+    "landingTitle": "Équipez-vous comme un pro, sans vous ruiner.",
+    "pageTitle": "Équipez votre point de vente avec du matériel",
+    "pageTitleHighlight": "100% compatible",
+    "pageTitleEnd": "Wafriq",
+    "description": "Lecteur de codes-barres, tablettes de vente... Découvrez tous les équipements professionnels sélectionnés pour vous.",
     "cta": "Commandez Maintenant",
     "viewMore": "Voir plus de produits",
     "startingFrom": "À partir de",
     "products": {
+      "tablet": {
+        "name": "Tablette de vente Android",
+        "price": "40 000 FCFA",
+        "description": "Gérez votre commerce avec fluidité, où que vous soyez."
+      },
       "printer": {
         "name": "Imprimante thermique",
         "price": "25 000 FCFA",
@@ -170,10 +180,10 @@
         "price": "10 000 FCFA",
         "description": "Un support élégant et pratique pour votre point de vente."
       },
-      "tablet": {
-        "name": "Tablette de vente Android",
-        "price": "40 000 FCFA",
-        "description": "Gérez votre commerce avec fluidité, où que vous soyez."
+      "barcodeReader": {
+        "name": "Lecteur de codes-barres",
+        "price": "15 000 FCFA",
+        "description": "Scannez vos produits rapidement et de manière fiable."
       }
     }
   },
@@ -207,8 +217,7 @@
   "affiliate": {
     "title": "Recommandez Wafriq. Gagnez de l'argent. C'est aussi simple que ça.",
     "description": "Vous connaissez des commerçants, restaurateurs ou vendeurs qui galèrent encore avec des carnets ? Aidez-les à passer au digital et soyez récompensé pour chaque inscription.",
-    "emailPlaceholder": "Entrez votre addresse mail",
-    "submit": "Envoyer",
+    "whatsappMe": "Écrivez-nous sur WhatsApp",
     "ctaTitle": "Prêt à gagner en partageant un outil utile ?",
     "becomeAffiliate": "Devenir affilié maintenant",
     "affiliateSubtitle": "L'inscription est gratuite. Les gains sont réels.",
@@ -245,60 +254,29 @@
       "subtitle": "Gagnez de l'argent. C'est aussi simple que ça."
     }
   },
-  "shopPage": {
-    "title": "Équipez votre point de vente avec du matériel",
-    "titleHighlight": "100% compatible",
-    "titleEnd": "Wafriq",
-    "description": "Lecteur de codes-barres, tablettes de vente... Découvrez tous les équipements professionnels sélectionnés pour vous.",
-    "startingFrom": "À partir de",
-    "cta": "Commandez Maintenant",
-    "products": {
-      "printer": {
-        "name": "Imprimante thermique",
-        "price": "25 000 FCFA",
-        "description": "Imprimez vos tickets rapidement, avec un minimum d'entretien."
+  "whatsappMessages": {
+    "plans": {
+      "standard": {
+        "monthly": "Bonjour, je souhaite souscrire à la Formule Standard (5,000 FCFA/mois). Merci de me donner plus d'informations.",
+        "annual": "Bonjour, je souhaite souscrire à la Formule Standard (42,000 FCFA/an). Merci de me donner plus d'informations."
       },
-      "stand": {
-        "name": "Stand pour caisse",
-        "price": "10 000 FCFA",
-        "description": "Un support élégant et pratique pour votre point de vente."
+      "pro": {
+        "monthly": "Bonjour, je souhaite souscrire à la Formule Pro (10,000 FCFA/mois). Merci de me donner plus d'informations.",
+        "annual": "Bonjour, je souhaite souscrire à la Formule Pro (84,000 FCFA/an). Merci de me donner plus d'informations."
       },
-      "tablet": {
-        "name": "Tablette de vente Android",
-        "price": "40 000 FCFA",
-        "description": "Gérez votre commerce avec fluidité, où que vous soyez."
-      },
-      "barcodeReader": {
-        "name": "Lecteur de codes-barres",
-        "price": "15 000 FCFA",
-        "description": "Scannez vos produits rapidement et de manière fiable."
-      },
-      "cashDrawer": {
-        "name": "Écran de caisse",
-        "price": "20 000 FCFA",
-        "description": "Tiroir-caisse sécurisé pour votre point de vente."
-      },
-      "contactlessPayment": {
-        "name": "Système de paiement sans contact",
-        "price": "30 000 FCFA",
-        "description": "Acceptez les paiements par carte et mobile money."
-      },
-      "software1": {
-        "name": "Logiciel de gestion commerciale",
-        "price": "50 000 FCFA",
-        "description": "Solution complète pour la gestion de vos stocks."
-      },
-      "software2": {
-        "name": "Logiciel de gestion commerciale",
-        "price": "50 000 FCFA",
-        "description": "Simplifiez la gestion de vos ventes et de votre stock."
-      },
-      "software3": {
-        "name": "Logiciel de gestion commerciale",
-        "price": "50 000 FCFA",
-        "description": "Solution tout-en-un pour votre entreprise."
+      "expert": {
+        "monthly": "Bonjour, je souhaite souscrire à la Formule Expert (15,000 FCFA/mois). Merci de me donner plus d'informations.",
+        "annual": "Bonjour, je souhaite souscrire à la Formule Expert (126,000 FCFA/an). Merci de me donner plus d'informations."
       }
-    }
+    },
+    "products": {
+      "tablet": "Bonjour, je souhaite commander une Tablette de vente Android (40,000 FCFA). Merci de me donner plus d'informations.",
+      "printer": "Bonjour, je souhaite commander une Imprimante thermique (25,000 FCFA). Merci de me donner plus d'informations.",
+      "stand": "Bonjour, je souhaite commander un Stand pour caisse (10,000 FCFA). Merci de me donner plus d'informations.",
+      "barcodeReader": "Bonjour, je souhaite commander un Lecteur de codes-barres (15,000 FCFA). Merci de me donner plus d'informations."
+    },
+    "affiliate": "Bonjour, je souhaite devenir partenaire affilié Wafriq. Merci de me donner plus d'informations.",
+    "general": "Bonjour, je suis intéressé par le système de caisse Wafriq. Merci de me donner plus d'informations."
   },
   "contactPage": {
     "title": "Rejoignez le programme d'affiliation Wafriq",

@@ -1,7 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { CircleCheck } from 'lucide-react';
+import Link from 'next/link';
+import { CircleCheck, MessageCircle } from 'lucide-react';
+import { getWhatsAppUrl } from '@/lib/whatsapp';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
@@ -28,6 +30,7 @@ type Plan = {
 
 export default function PricingToggle() {
   const t = useTranslations('pricing');
+  const w = useTranslations('whatsappMessages');
   const [isAnnual, setIsAnnual] = useState<boolean>(false);
 
   const plans: readonly Plan[] = [
@@ -142,12 +145,15 @@ export default function PricingToggle() {
                       </li>
                     ))}
                   </ul>
-                  <button
-                    type="button"
-                    className="w-full mt-6 px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-xl font-medium hover:bg-blue-500 hover:text-white transition-colors"
+                  <Link
+                    href={getWhatsAppUrl(w(`plans.${plan.key}.${isAnnual ? 'annual' : 'monthly'}`))}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full mt-6 px-6 py-3 border-2 border-primary-500 text-primary-500 rounded-xl font-medium hover:bg-primary-500 hover:text-white transition-colors"
                   >
+                    <MessageCircle className="w-5 h-5" />
                     {t('cta')}
-                  </button>
+                  </Link>
                 </div>
               </div>
             );

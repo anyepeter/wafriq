@@ -8,8 +8,11 @@ import {
   Trophy,
   ChartNoAxesCombined,
   CircleDollarSign,
+  MessageCircle,
   LucideIcon,
 } from 'lucide-react';
+import { getWhatsAppUrl } from '@/lib/whatsapp';
+import { Link } from '@/i18n/navigation';
 
 interface InfoItem {
   icon: LucideIcon;
@@ -24,6 +27,7 @@ interface InfoListProps {
 
 export default function Affiliate(): JSX.Element {
   const t = useTranslations('affiliate');
+  const w = useTranslations('whatsappMessages');
   const howItWorksItems: InfoItem[] = [
     { icon: ClipboardList, text: t('howItWorks.step1') },
     { icon: Share2, text: t('howItWorks.step2') },
@@ -56,53 +60,17 @@ export default function Affiliate(): JSX.Element {
           </div>
           <div className="w-full relative flex justify-center -mt-15 md:-mt-30 z-10">
             <div className="grid w-full bg-white max-w-[1000px] rounded-2xl p-4 md:grid-cols-2">
-              <div className="p-2 pb-6 md:p-6 border-b border-gray-200 md:border-r md:border-b-0">
+              <div className="p-2 pb-6 md:p-6 border-b border-gray-200 md:border-r md:border-b-0 flex flex-col justify-center">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
                   {t('ctaTitle')}
                 </h3>
-                <form className="flex flex-col md:flex-row gap-3">
-                  <div className="flex-1 relative">
-                    <div className="absolute left-4 top-1/2 -translate-y-1/2">
-                      <svg
-                        className="w-5 h-5 text-gray-400"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </div>
-                    <input
-                      type="email"
-                      placeholder={t('emailPlaceholder')}
-                      className="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="px-6 py-3 bg-blue-500 text-white justify-center rounded-xl font-medium hover:bg-blue-600 transition-colors flex items-center gap-2"
-                  >
-                    {t('submit')}
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </button>
-                </form>
+                <Link
+                  href={getWhatsAppUrl(w('affiliate'))}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary-500 text-white rounded-xl font-medium hover:bg-primary-600 transition-colors"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  {t('whatsappMe')}
+                </Link>
               </div>
               <div className="p-2 pt-6 pb-6 md:p-6 flex flex-col justify-between">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">

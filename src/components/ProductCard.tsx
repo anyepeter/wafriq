@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { MessageCircle } from 'lucide-react';
 
 interface ProductCardProps {
     image: string;
@@ -8,7 +9,7 @@ interface ProductCardProps {
     price: string;
     startingFromText: string;
     ctaText: string;
-    onClick?: () => void;
+    whatsappUrl?: string;
 }
 
 export default function ProductCard({
@@ -18,7 +19,7 @@ export default function ProductCard({
     price,
     startingFromText,
     ctaText,
-    onClick
+    whatsappUrl
 }: ProductCardProps) {
     return (
         <article className="bg-white rounded-xl overflow-hidden p-4 md:p-6 lg:p-8 border border-gray-200 hover:shadow-lg transition-all duration-300">
@@ -43,14 +44,17 @@ export default function ProductCard({
             <p className="text-base text-gray-500 mb-4 line-clamp-1">
                 {description}
             </p>
-            <Button
-                variant="outline"
-                size="lg"
-                className="w-full border-2 border-primary-500 text-primary-500 rounded-lg font-medium hover:bg-primary-500 hover:text-white transition-colors"
-                onClick={onClick}
-            >
-                {ctaText}
-            </Button>
+            {whatsappUrl && (
+                <Link
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 w-full px-6 py-3 border-2 border-primary-500 text-primary-500 rounded-lg font-medium hover:bg-primary-500 hover:text-white transition-colors"
+                >
+                    <MessageCircle className="w-5 h-5" />
+                    {ctaText}
+                </Link>
+            )}
         </article>
     );
 }

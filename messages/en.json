@@ -62,15 +62,16 @@
     },
     "shop": {
       "title": "Shop",
+      "tablet": "Android Sales Tablet",
       "printer": "Thermal Printer",
       "stand": "Cash Register Stand",
-      "tablet": "Sales Tablet"
+      "barcodeReader": "Barcode Reader"
     },
     "affiliate": {
       "title": "Affiliate Program",
       "partner": "Become a Partner"
     },
-    "copyright": "© 2025 Wafriq. All rights reserved.",
+    "copyright": "All rights reserved.",
     "privacy": "Privacy & Policy",
     "legal": "Legal",
     "terms": "Terms & Condition",
@@ -155,11 +156,20 @@
   },
   "shop": {
     "badge": "Our Shop",
-    "title": "Equip yourself like a pro, without breaking the bank.",
+    "landingTitle": "Equip yourself like a pro, without breaking the bank.",
+    "pageTitle": "Equip your point of sale with",
+    "pageTitleHighlight": "100% compatible",
+    "pageTitleEnd": "Wafriq equipment",
+    "description": "Barcode readers, sales tablets... Discover all our professional equipment selected for you.",
     "cta": "Order Now",
     "viewMore": "View more products",
     "startingFrom": "Starting from",
     "products": {
+      "tablet": {
+        "name": "Android Sales Tablet",
+        "price": "40,000 FCFA",
+        "description": "Manage your business smoothly, wherever you are."
+      },
       "printer": {
         "name": "Thermal Printer",
         "price": "25,000 FCFA",
@@ -170,10 +180,10 @@
         "price": "10,000 FCFA",
         "description": "An elegant and practical stand for your point of sale."
       },
-      "tablet": {
-        "name": "Android Sales Tablet",
-        "price": "40,000 FCFA",
-        "description": "Manage your business smoothly, wherever you are."
+      "barcodeReader": {
+        "name": "Barcode Reader",
+        "price": "15,000 FCFA",
+        "description": "Scan products quickly and reliably."
       }
     }
   },
@@ -207,8 +217,7 @@
   "affiliate": {
     "title": "Recommend Wafriq. Earn money. It's that simple.",
     "description": "Do you know merchants, restaurateurs or vendors who still struggle with notebooks? Help them go digital and get rewarded for each signup.",
-    "emailPlaceholder": "Enter your email address",
-    "submit": "Submit",
+    "whatsappMe": "WhatsApp Me",
     "ctaTitle": "Ready to earn by sharing a useful tool?",
     "becomeAffiliate": "Become an affiliate now",
     "affiliateSubtitle": "Registration is free. The earnings are real.",
@@ -245,60 +254,29 @@
       "subtitle": "Earn money. It's that simple."
     }
   },
-  "shopPage": {
-    "title": "Equip your point of sale with",
-    "titleHighlight": "100% compatible",
-    "titleEnd": "Wafriq equipment",
-    "description": "Barcode readers, sales tablets... Discover all our professional equipment selected for you.",
-    "startingFrom": "Starting from",
-    "cta": "Order Now",
-    "products": {
-      "printer": {
-        "name": "Thermal Printer",
-        "price": "25,000 FCFA",
-        "description": "Print your tickets quickly, with minimal maintenance."
+  "whatsappMessages": {
+    "plans": {
+      "standard": {
+        "monthly": "Hello, I would like to subscribe to the Standard Plan (5,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Standard Plan (42,000 FCFA/year). Please provide more information."
       },
-      "stand": {
-        "name": "Cash Register Stand",
-        "price": "10,000 FCFA",
-        "description": "An elegant and practical stand for your point of sale."
+      "pro": {
+        "monthly": "Hello, I would like to subscribe to the Pro Plan (10,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Pro Plan (84,000 FCFA/year). Please provide more information."
       },
-      "tablet": {
-        "name": "Android Sales Tablet",
-        "price": "40,000 FCFA",
-        "description": "Manage your business smoothly, wherever you are."
-      },
-      "barcodeReader": {
-        "name": "Barcode Reader",
-        "price": "15,000 FCFA",
-        "description": "Scan products quickly and reliably."
-      },
-      "cashDrawer": {
-        "name": "Cash Drawer",
-        "price": "20,000 FCFA",
-        "description": "Secure cash drawer for your point of sale."
-      },
-      "contactlessPayment": {
-        "name": "Contactless Payment System",
-        "price": "30,000 FCFA",
-        "description": "Accept payments via card and mobile money."
-      },
-      "software1": {
-        "name": "Commercial Management Software",
-        "price": "50,000 FCFA",
-        "description": "Complete solution for inventory management."
-      },
-      "software2": {
-        "name": "Commercial Management Software",
-        "price": "50,000 FCFA",
-        "description": "Simplify the management of your sales and inventory."
-      },
-      "software3": {
-        "name": "Commercial Management Software",
-        "price": "50,000 FCFA",
-        "description": "All-in-one solution for your business."
+      "expert": {
+        "monthly": "Hello, I would like to subscribe to the Expert Plan (15,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Expert Plan (126,000 FCFA/year). Please provide more information."
       }
-    }
+    },
+    "products": {
+      "tablet": "Hello, I would like to order an Android Sales Tablet (40,000 FCFA). Please provide more information.",
+      "printer": "Hello, I would like to order a Thermal Printer (25,000 FCFA). Please provide more information.",
+      "stand": "Hello, I would like to order a Cash Register Stand (10,000 FCFA). Please provide more information.",
+      "barcodeReader": "Hello, I would like to order a Barcode Reader (15,000 FCFA). Please provide more information."
+    },
+    "affiliate": "Hello, I would like to become a Wafriq affiliate partner. Please provide more information.",
+    "general": "Hello, I am interested in the Wafriq POS system. Please provide more information."
   },
   "contactPage": {
     "title": "Join the Wafriq Affiliate Program",

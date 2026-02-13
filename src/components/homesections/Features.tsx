@@ -54,8 +54,9 @@ export default function Features() {
               <Image
                 src="/images/illustration4.png"
                 alt="Feature Illustration"
-                className="object-cover"
+                className="object-cover brightness-110 contrast-110 saturate-110"
                 fill
+                unoptimized
               />
             </div>
             <FeatureCard
@@ -94,7 +95,7 @@ export default function Features() {
             <Image
               src="/images/illustration4.png"
               alt="Feature Illustration"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover brightness-110 contrast-110 saturate-110"
               width={280}
               height={280}
             />
@@ -139,9 +140,12 @@ function FeatureCard({
         <Image
           src={image}
           alt={title}
-          width={600}
+          width={700}
           height={600}
-          className={`w-full h-auto object-cover rounded-x 
+          className={`w-full h-auto object-cover rounded-x
+            ${image.endsWith('.png')
+              ? 'brightness-100 contrast-108 saturate-120'
+              : ''}
             ${image === "images/illustration3.svg"
               ? '-mt-18'
               : ''}

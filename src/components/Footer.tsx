@@ -1,10 +1,10 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import GoToTopButton from '@/components/GoToTopButton';
 
-export default function Footer() {
-  const t = useTranslations('footer');
+export default async function Footer() {
+  const t = await getTranslations('footer');
 
   const footerSections = [
     {
@@ -27,9 +27,10 @@ export default function Footer() {
     {
       title: t('shop.title'),
       links: [
+        { label: t('shop.tablet'), href: '/shop' },
         { label: t('shop.printer'), href: '/shop' },
         { label: t('shop.stand'), href: '/shop' },
-        { label: t('shop.tablet'), href: '/shop' },
+        { label: t('shop.barcodeReader'), href: '/shop' },
       ],
     },
     {
@@ -128,28 +129,8 @@ export default function Footer() {
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800">
           <p className="text-sm text-gray-500 mb-4 md:mb-0">
-            {t('copyright')}
+            &copy; {new Date().getFullYear()} Wafriq. {t('copyright')}
           </p>
-          <div className="flex flex-wrap items-center gap-6">
-            <a
-              href="/privacy"
-              className="text-sm text-gray-400 hover:text-white transition-colors"
-            >
-              {t('privacy')}
-            </a>
-            <a
-              href="/legal"
-              className="text-sm text-gray-400 hover:text-white transition-colors"
-            >
-              {t('legal')}
-            </a>
-            <a
-              href="/terms"
-              className="text-sm text-gray-400 hover:text-white transition-colors"
-            >
-              {t('terms')}
-            </a>
-          </div>
           <GoToTopButton label={t('goToTop')} />
         </div>
       </div>

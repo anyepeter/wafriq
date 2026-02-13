@@ -6,6 +6,7 @@ import MobileMenu from '@/components/MobileMenu';
 import { JSX } from 'react';
 import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
+import { getWhatsAppUrl } from '@/lib/whatsapp';
 
 interface NavLink {
   href: string;
@@ -14,7 +15,7 @@ interface NavLink {
 
 export default function Navbar(): JSX.Element {
   const t = useTranslations('nav');
-
+  const w = useTranslations('whatsappMessages');
   const navLinks: NavLink[] = [
     { href: '/#features', label: t('features') },
     { href: '/#pricing', label: t('pricing') },
@@ -51,16 +52,18 @@ export default function Navbar(): JSX.Element {
           </nav>
           <div className="hidden lg:flex items-center gap-4">
             <LanguageSwitcher />
-            <Link
-              href="/#order"
+            <a
+              href={getWhatsAppUrl(w('general'))}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium border rounded-lg hover:bg-blue-600 transition-colors"
             >
               {t('cta')}
-            </Link>
+            </a>
           </div>
           <div className="lg:hidden flex items-center gap-2">
             <LanguageSwitcher />
-            <MobileMenu navLinks={navLinks} ctaText={t('cta')} />
+            <MobileMenu navLinks={navLinks} ctaText={t('cta')} ctaUrl={getWhatsAppUrl(w('general'))} />
           </div>
         </div>
       </div>
