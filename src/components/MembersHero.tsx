@@ -1,6 +1,7 @@
 import { Button } from './ui/button';
 import { MoveRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Demo from './homesections/Demo';
 
 
 export default function MembersHero() {
@@ -18,13 +19,16 @@ export default function MembersHero() {
                     <p className="text-gray-600 text-sm sm:text-lg max-w-3xl mx-auto mb-10">
                         {t('hero.description')}
                     </p>
-                    <Button
-                        className="text-white font-semibold"
-                        size="lg"
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Demo
+                        variant="default"
+                        className="text-white font-semibold flex items-center gap-2 bg-primary-600 hover:bg-primary-700 px-8 py-4 rounded-xl"
+                        showIcon={false}
                     >
                         {t('hero.cta')}
                         <MoveRight className="mt-1 w-5 h-5" />
-                    </Button>
+                    </Demo>
+                    </div>
                 </div>
             </div>
         </section>

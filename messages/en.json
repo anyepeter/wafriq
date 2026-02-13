@@ -279,8 +279,11 @@
     "general": "Hello, I am interested in the Wafriq POS system. Please provide more information."
   },
   "contactPage": {
-    "title": "Join the Wafriq Affiliate Program",
-    "description": "Ready to earn by recommending a useful tool? Fill out the form below to become an affiliate now!",
+    "title": "Contact Us",
+    "description": "Have a question? Chat with us directly on WhatsApp for an immediate response!",
+    "whatsappTitle": "Chat with us",
+    "whatsappDescription": "Get an immediate response from our team.",
+    "whatsappCta": "Chat on WhatsApp",
     "form": {
       "fullName": "Full Name",
       "fullNamePlaceholder": "Enter your full name",

@@ -4,10 +4,22 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
 interface DemoProps {
-    ctaSecondaryText: string;
+    ctaSecondaryText?: string;
+    children?: React.ReactNode;
+    className?: string;
+    variant?: "outline" | "default" | "link" | "destructive" | "secondary" | "ghost";
+    size?: "default" | "sm" | "lg" | "icon";
+    showIcon?: boolean;
 }
 
-export default function Demo({ ctaSecondaryText }: DemoProps) {
+export default function Demo({
+    ctaSecondaryText,
+    children,
+    className,
+    variant = "outline",
+    size = "lg",
+    showIcon = true
+}: DemoProps) {
     const [showDemo, setShowDemo] = useState(false);
     const [videoLoaded, setVideoLoaded] = useState(false);
 
@@ -25,29 +37,29 @@ export default function Demo({ ctaSecondaryText }: DemoProps) {
     return (
         <>
             <Button
-                variant="outline"
-                size="lg"
-                className="px-6 lg:px-3 xl:px-6 hover:bg-gray-100 hover:scale-105 transition-all duration-300 ease-in-out gap-2"
+                variant={variant}
+                size={size}
+                className={className || "px-6 lg:px-3 xl:px-6 hover:bg-gray-100 hover:scale-105 transition-all duration-300 ease-in-out gap-2"}
                 onClick={() => {
                     setShowDemo(true);
                     setVideoLoaded(false);
                 }}
             >
-                <svg
-                    className="w-5 h-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                >
-                    <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                        clipRule="evenodd"
-                    />
-                </svg>
-                {ctaSecondaryText}
+                {showIcon && (
+                    <svg
+                        className="w-5 h-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                    >
+                        <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                            clipRule="evenodd"
+                        />
+                    </svg>
+                )}
+                {children || ctaSecondaryText}
             </Button>
-
-            {/* Demo Video Popup */}
             {showDemo && (
                 <div
                     className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"

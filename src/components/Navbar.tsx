@@ -21,7 +21,7 @@ export default function Navbar(): JSX.Element {
     { href: '/#pricing', label: t('pricing') },
     { href: '/shop', label: t('shop') },
     { href: '/members', label: t('partner') },
-    { href: '/demo', label: t('demo') },
+    // { href: '/demo', label: t('demo') },
     { href: '/contact', label: t('contact') },
   ];
   return (
@@ -43,7 +43,7 @@ export default function Navbar(): JSX.Element {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium transition-colors text-gray-600 hover:text-primary-500"
+                className="text-base font-medium transition-colors text-gray-600 hover:text-primary-500"
                 scroll={true}
               >
                 {link.label}
@@ -56,7 +56,7 @@ export default function Navbar(): JSX.Element {
               href={getWhatsAppUrl(w('general'))}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium border rounded-lg hover:bg-blue-600 transition-colors"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium border rounded-lg hover:bg-blue-600 hover:text-white transition-colors"
             >
               {t('cta')}
             </a>

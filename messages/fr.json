@@ -279,8 +279,11 @@
     "general": "Bonjour, je suis intéressé par le système de caisse Wafriq. Merci de me donner plus d'informations."
   },
   "contactPage": {
-    "title": "Rejoignez le programme d'affiliation Wafriq",
-    "description": "Prêt à gagner en recommandant un outil utile ? Remplissez le formulaire ci-dessous pour devenir affilié maintenant !",
+    "title": "Contactez-nous",
+    "description": "Vous avez une question ? Discutez avec nous directement sur WhatsApp pour une réponse immédiate !",
+    "whatsappTitle": "Discutez avec nous",
+    "whatsappDescription": "Obtenez une réponse immédiate de notre équipe.",
+    "whatsappCta": "Discuter sur WhatsApp",
     "form": {
       "fullName": "Nom complet",
       "fullNamePlaceholder": "Entrez votre nom complet",

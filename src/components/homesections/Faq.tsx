@@ -6,7 +6,7 @@ export default function Faq() {
   const t = useTranslations('faq');
 
   return (
-    <section id="faq" className="py-16 lg:py-24 bg-white">
+    <section id="faq" className="py-16 bg-white">
       <div className="max-w-[1400px] mx-auto px-2 sm:px-6 lg:px-8">
         <div className='w-full max-w-[600px] md:max-w-full mx-auto p-4'>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-9 items-center">

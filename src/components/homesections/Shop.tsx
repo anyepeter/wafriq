@@ -7,7 +7,7 @@ import ProductCard from '@/components/ProductCard';
 import { getWhatsAppUrl } from '@/lib/whatsapp';
 
 
-type ProductKey = 'tablet' | 'printer' | 'stand' | 'barcodeReader';
+type ProductKey = 'tablet' | 'printer' | 'stand';
 
 type Product = {
   key: ProductKey;
@@ -30,10 +30,6 @@ export default function Shop() {
     {
       key: 'stand',
       image: '/images/image-2.png',
-    },
-    {
-      key: 'barcodeReader',
-      image: '/images/image-4.png',
     },
   ];
   return (
