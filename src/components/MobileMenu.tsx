@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import Link from 'next/link';
 
 interface NavLink {
   href: string;
@@ -93,19 +93,21 @@ export default function MobileMenu({ navLinks, ctaText, ctaUrl }: MobileMenuProp
           </div>
           <nav className="flex-1 overflow-y-auto py-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 className="block px-6 py-3 text-gray-600 border-b border-gray-200 hover:text-gray-900 hover:bg-gray-50 transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="p-4">
             <Link
               href={ctaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="block w-full text-center px-6 py-3 rounded-lg border transition-colors font-medium"
             >

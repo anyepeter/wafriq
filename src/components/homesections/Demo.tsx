@@ -34,6 +34,19 @@ export default function Demo({
         };
     }, [showDemo]);
 
+    useEffect(() => {
+        if (!showDemo) return;
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') {
+                setShowDemo(false);
+            }
+        };
+        document.addEventListener('keydown', handleKeyDown);
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [showDemo]);
+
     return (
         <>
             <Button

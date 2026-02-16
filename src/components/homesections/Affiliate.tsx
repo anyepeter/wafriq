@@ -1,24 +1,23 @@
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import { JSX } from 'react';
+import { getWhatsAppUrl } from '@/lib/whatsapp';
 import {
-  Star,
-  ClipboardList,
-  Share2,
-  Trophy,
   ChartNoAxesCombined,
   CircleDollarSign,
-  MessageCircle,
+  ClipboardList,
   LucideIcon,
+  MessageCircle,
+  Share2,
+  Star,
+  Trophy,
 } from 'lucide-react';
-import { getWhatsAppUrl } from '@/lib/whatsapp';
-import { Link } from '@/i18n/navigation';
+import { JSX } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 interface InfoItem {
   icon: LucideIcon;
   text: string;
 }
-
 interface InfoListProps {
   title: string;
   items: InfoItem[];
@@ -66,6 +65,8 @@ export default function Affiliate(): JSX.Element {
                 </h3>
                 <Link
                   href={getWhatsAppUrl(w('affiliate'))}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary-500 text-white rounded-xl font-medium hover:bg-primary-600 transition-colors"
                 >
                   <MessageCircle className="w-5 h-5" />
