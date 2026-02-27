@@ -28,7 +28,7 @@ export default async function Hero() {
               {t('headline')}{' '}
               <span className="text-blue-500">{t('headlineHighlight')}</span>{' '}
               {t('headlineContinue')}{' '}
-              <span className="text-green-500">{t('whatsapp')}</span>.
+              <span className="text-green-500">{t('whatsapp')}</span>
             </h1>
             <p className="mt-6 text-xl text-gray-600 max-w-xl mx-auto lg:mx-0">
               {t('description')}

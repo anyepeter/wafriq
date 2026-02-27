@@ -115,7 +115,7 @@
   "pricing": {
     "badge": "Pricing Plans",
     "title": "Manage your business like a pro starting from",
-    "titleHighlight": "5,000 FCFA",
+    "titleHighlight": "60,000 FCFA",
     "monthly": "Monthly",
     "annual": "Annual",
     "discount": "-30%",
@@ -125,34 +125,43 @@
     "plans": {
       "standard": {
         "name": "Standard Plan",
-        "description": "Ideal to simply start your business",
-        "priceMonthly": "5,000 FCFA",
-        "priceAnnual": "42,000 FCFA"
+        "description": "For young businesses that want to print receipts and track their sales",
+        "priceMonthly": "7,000 FCFA",
+        "priceAnnual": "60,000 FCFA"
       },
       "pro": {
         "name": "Pro Plan",
-        "description": "For businesses that want to go further",
-        "priceMonthly": "10,000 FCFA",
-        "priceAnnual": "84,000 FCFA"
+        "description": "For stores and restaurants that want to print receipts and control their stock",
+        "priceMonthly": "7,000 FCFA",
+        "priceAnnual": "60,000 FCFA"
       },
       "expert": {
         "name": "Expert Plan",
-        "description": "Complete package to fully equip yourself",
-        "priceMonthly": "15,000 FCFA",
-        "priceAnnual": "126,000 FCFA"
+        "description": "For businesses with a high demand for sales, inventory, and marketing automation",
+        "priceMonthly": "7,000 FCFA",
+        "priceAnnual": "60,000 FCFA"
       }
     },
     "features": {
-      "billing": "Billing module",
-      "payments": "Payment management",
-      "expenses": "Expense tracking",
-      "reports": "Financial reports",
-      "budget": "Budget planning",
-      "stats": "Sales statistics",
-      "profitability": "Profitability analysis",
-      "forecasts": "Financial forecasts",
-      "resources": "Financial resource management"
-    }
+      "billing": "1 store included",
+      "payments": "Sell unlimited products",
+      "expenses": "Unlimited connected team members",
+      "reports": "1 connected receipt printer",
+      "budget": "Individual sales reports",
+      "stats": "Individual user permissions",
+      "profitability": "1 receipt printer included (annual plan)",
+      "forecasts": "Customer support Mon-Fri",
+      "resources": "Stock management",
+      "stock_alerts": "Automatic stock alerts",
+      "multi_checkout": "Multiple checkouts for deeper sales analysis",
+      "barcode_support": "Barcode/QR code scanner support",
+      "barcode_scanner": "1 barcode/QR code scanner included (annual plan)",
+      "marketing_auto": "Marketing campaigns automation",
+      "api_access": "Full API access",
+      "priority_support": "Priority customer support",
+      "essential_features": "Standard features"
+    },
+    "addonOptions": "Additional options"
   },
   "shop": {
     "badge": "Our Shop",
@@ -257,16 +266,16 @@
   "whatsappMessages": {
     "plans": {
       "standard": {
-        "monthly": "Hello, I would like to subscribe to the Standard Plan (5,000 FCFA/month). Please provide more information.",
-        "annual": "Hello, I would like to subscribe to the Standard Plan (42,000 FCFA/year). Please provide more information."
+        "monthly": "Hello, I would like to subscribe to the Standard Plan (7,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Standard Plan (60,000 FCFA/year). Please provide more information."
       },
       "pro": {
-        "monthly": "Hello, I would like to subscribe to the Pro Plan (10,000 FCFA/month). Please provide more information.",
-        "annual": "Hello, I would like to subscribe to the Pro Plan (84,000 FCFA/year). Please provide more information."
+        "monthly": "Hello, I would like to subscribe to the Standard Plan with the Pro add-on (7,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Standard Plan with the Pro add-on (60,000 FCFA/year). Please provide more information."
       },
       "expert": {
-        "monthly": "Hello, I would like to subscribe to the Expert Plan (15,000 FCFA/month). Please provide more information.",
-        "annual": "Hello, I would like to subscribe to the Expert Plan (126,000 FCFA/year). Please provide more information."
+        "monthly": "Hello, I would like to subscribe to the Standard Plan with the Expert add-on (7,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Standard Plan with the Expert add-on (60,000 FCFA/year). Please provide more information."
       }
     },
     "products": {

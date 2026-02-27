@@ -115,7 +115,7 @@
   "pricing": {
     "badge": "Plans Tarifaires",
     "title": "Gérez votre business comme un pro à partir de",
-    "titleHighlight": "5,000 FCFA",
+    "titleHighlight": "60,000 FCFA",
     "monthly": "Mensuel",
     "annual": "Annuel",
     "discount": "-30%",
@@ -124,35 +124,44 @@
     "cta": "Commandez Maintenant",
     "plans": {
       "standard": {
-        "name": "Formule Standard",
-        "description": "Idéal pour démarrer simplement votre activité",
-        "priceMonthly": "5,000 FCFA",
-        "priceAnnual": "42,000 FCFA"
+        "name": "Plan Standard",
+        "description": "Pour les jeunes entreprises qui souhaitent imprimer des reçus et suivre leurs ventes",
+        "priceMonthly": "7,000 FCFA",
+        "priceAnnual": "60,000 FCFA"
       },
       "pro": {
-        "name": "Formule Pro",
-        "description": "Pour les commerces qui veulent aller plus loin",
-        "priceMonthly": "10,000 FCFA",
-        "priceAnnual": "84,000 FCFA"
+        "name": "Plan Pro",
+        "description": "Pour les magasins et les restaurants qui veulent imprimer des reçus et contrôler leurs stocks",
+        "priceMonthly": "7,000 FCFA",
+        "priceAnnual": "60,000 FCFA"
       },
       "expert": {
-        "name": "Formule Expert",
-        "description": "Pack complet pour s'équiper totalement",
-        "priceMonthly": "15,000 FCFA",
-        "priceAnnual": "126,000 FCFA"
+        "name": "Plan Expert",
+        "description": "Pour les entreprises ayant une forte demande d'automatisation des ventes, des stocks et du marketing",
+        "priceMonthly": "7,000 FCFA",
+        "priceAnnual": "60,000 FCFA"
       }
     },
     "features": {
-      "billing": "Module de facturation",
-      "payments": "Gestion des paiements",
-      "expenses": "Suivi des dépenses",
-      "reports": "Rapports financiers",
-      "budget": "Planification budgétaire",
-      "stats": "Statistiques de vente",
-      "profitability": "Analyse de rentabilité",
-      "forecasts": "Prévisions financières",
-      "resources": "Gestion des ressources financières"
-    }
+      "billing": "1 magasin inclus",
+      "payments": "Vendre un nombre illimité de produits",
+      "expenses": "Nombre illimité de membres d'équipe connectés",
+      "reports": "1 imprimante de reçus connectée",
+      "budget": "Rapports de vente individuels",
+      "stats": "Autorisations individuelles pour les utilisateurs",
+      "profitability": "1 imprimante de reçus incluse (plan annuel)",
+      "forecasts": "Support client du lundi au vendredi",
+      "resources": "Gestion des stocks",
+      "stock_alerts": "Alertes automatiques sur les stocks",
+      "multi_checkout": "Plusieurs caisses pour une analyse plus fine des ventes",
+      "barcode_support": "Support pour le scanner de codes-barres/codes QR",
+      "barcode_scanner": "1 scanner de code-barres/code QR inclus (plan annuel)",
+      "marketing_auto": "Automatisation des campagnes de marketing",
+      "api_access": "Accès complet à l'API",
+      "priority_support": "Support client prioritaire",
+      "essential_features": "Fonctionnalités standard"
+    },
+    "addonOptions": "Options supplémentaires"
   },
   "shop": {
     "badge": "Notre Boutique",
@@ -257,16 +266,16 @@
   "whatsappMessages": {
     "plans": {
       "standard": {
-        "monthly": "Bonjour, je souhaite souscrire à la Formule Standard (5,000 FCFA/mois). Merci de me donner plus d'informations.",
-        "annual": "Bonjour, je souhaite souscrire à la Formule Standard (42,000 FCFA/an). Merci de me donner plus d'informations."
+        "monthly": "Bonjour, je souhaite souscrire au forfait Standard (7,000 FCFA/mois). Merci de me donner plus d'informations.",
+        "annual": "Bonjour, je souhaite souscrire au forfait Standard (60,000 FCFA/an). Merci de me donner plus d'informations."
       },
       "pro": {
-        "monthly": "Bonjour, je souhaite souscrire à la Formule Pro (10,000 FCFA/mois). Merci de me donner plus d'informations.",
-        "annual": "Bonjour, je souhaite souscrire à la Formule Pro (84,000 FCFA/an). Merci de me donner plus d'informations."
+        "monthly": "Bonjour, je souhaite souscrire au forfait standard avec l'option Pro (14,000 FCFA/mois). Merci de me donner plus d'informations.",
+        "annual": "Bonjour, je souhaite souscrire au forfait standard avec l'option Pro (120,000 FCFA/an). Merci de me donner plus d'informations."
       },
       "expert": {
-        "monthly": "Bonjour, je souhaite souscrire à la Formule Expert (15,000 FCFA/mois). Merci de me donner plus d'informations.",
-        "annual": "Bonjour, je souhaite souscrire à la Formule Expert (126,000 FCFA/an). Merci de me donner plus d'informations."
+        "monthly": "Bonjour, je souhaite souscrire au forfait standard avec l'option Expert (14,000 FCFA/mois). Merci de me donner plus d'informations.",
+        "annual": "Bonjour, je souhaite souscrire au forfait standard avec l'option Expert (120,000 FCFA/an). Merci de me donner plus d'informations."
       }
     },
     "products": {
