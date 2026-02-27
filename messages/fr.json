@@ -124,19 +124,19 @@
     "cta": "Commandez Maintenant",
     "plans": {
       "standard": {
-        "name": "Plan Standard",
+        "name": "Essentiel",
         "description": "Pour les jeunes entreprises qui souhaitent imprimer des reçus et suivre leurs ventes",
         "priceMonthly": "7,000 FCFA",
         "priceAnnual": "60,000 FCFA"
       },
       "pro": {
-        "name": "Plan Pro",
+        "name": "Inventaire",
         "description": "Pour les magasins et les restaurants qui veulent imprimer des reçus et contrôler leurs stocks",
         "priceMonthly": "7,000 FCFA",
         "priceAnnual": "60,000 FCFA"
       },
       "expert": {
-        "name": "Plan Expert",
+        "name": "Production",
         "description": "Pour les entreprises ayant une forte demande d'automatisation des ventes, des stocks et du marketing",
         "priceMonthly": "7,000 FCFA",
         "priceAnnual": "60,000 FCFA"
@@ -266,16 +266,16 @@
   "whatsappMessages": {
     "plans": {
       "standard": {
-        "monthly": "Bonjour, je souhaite souscrire au forfait Standard (7,000 FCFA/mois). Merci de me donner plus d'informations.",
-        "annual": "Bonjour, je souhaite souscrire au forfait Standard (60,000 FCFA/an). Merci de me donner plus d'informations."
+        "monthly": "Bonjour, je souhaite souscrire au forfait Essentiel (7,000 FCFA/mois). Merci de me donner plus d'informations.",
+        "annual": "Bonjour, je souhaite souscrire au forfait Essentiel (60,000 FCFA/an). Merci de me donner plus d'informations."
       },
       "pro": {
-        "monthly": "Bonjour, je souhaite souscrire au forfait standard avec l'option Pro (14,000 FCFA/mois). Merci de me donner plus d'informations.",
-        "annual": "Bonjour, je souhaite souscrire au forfait standard avec l'option Pro (120,000 FCFA/an). Merci de me donner plus d'informations."
+        "monthly": "Bonjour, je souhaite souscrire au forfait Essentiel avec l'option Inventaire (7,000 FCFA/mois). Merci de me donner plus d'informations.",
+        "annual": "Bonjour, je souhaite souscrire au forfait Essentiel avec l'option Inventaire (60,000 FCFA/an). Merci de me donner plus d'informations."
       },
       "expert": {
-        "monthly": "Bonjour, je souhaite souscrire au forfait standard avec l'option Expert (14,000 FCFA/mois). Merci de me donner plus d'informations.",
-        "annual": "Bonjour, je souhaite souscrire au forfait standard avec l'option Expert (120,000 FCFA/an). Merci de me donner plus d'informations."
+        "monthly": "Bonjour, je souhaite souscrire au forfait Essentiel avec l'option Production (7,000 FCFA/mois). Merci de me donner plus d'informations.",
+        "annual": "Bonjour, je souhaite souscrire au forfait Essentiel avec l'option Production (60,000 FCFA/an). Merci de me donner plus d'informations."
       }
     },
     "products": {

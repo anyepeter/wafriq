@@ -124,19 +124,19 @@
     "cta": "Order Now",
     "plans": {
       "standard": {
-        "name": "Standard Plan",
+        "name": "Essential",
         "description": "For young businesses that want to print receipts and track their sales",
         "priceMonthly": "7,000 FCFA",
         "priceAnnual": "60,000 FCFA"
       },
       "pro": {
-        "name": "Pro Plan",
+        "name": "Inventory",
         "description": "For stores and restaurants that want to print receipts and control their stock",
         "priceMonthly": "7,000 FCFA",
         "priceAnnual": "60,000 FCFA"
       },
       "expert": {
-        "name": "Expert Plan",
+        "name": "Production",
         "description": "For businesses with a high demand for sales, inventory, and marketing automation",
         "priceMonthly": "7,000 FCFA",
         "priceAnnual": "60,000 FCFA"
@@ -266,16 +266,16 @@
   "whatsappMessages": {
     "plans": {
       "standard": {
-        "monthly": "Hello, I would like to subscribe to the Standard Plan (7,000 FCFA/month). Please provide more information.",
-        "annual": "Hello, I would like to subscribe to the Standard Plan (60,000 FCFA/year). Please provide more information."
+        "monthly": "Hello, I would like to subscribe to the Essential Plan (7,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Essential Plan (60,000 FCFA/year). Please provide more information."
       },
       "pro": {
-        "monthly": "Hello, I would like to subscribe to the Standard Plan with the Pro add-on (7,000 FCFA/month). Please provide more information.",
-        "annual": "Hello, I would like to subscribe to the Standard Plan with the Pro add-on (60,000 FCFA/year). Please provide more information."
+        "monthly": "Hello, I would like to subscribe to the Essential Plan with the Inventory add-on (7,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Essential Plan with the Inventory add-on (60,000 FCFA/year). Please provide more information."
       },
       "expert": {
-        "monthly": "Hello, I would like to subscribe to the Standard Plan with the Expert add-on (7,000 FCFA/month). Please provide more information.",
-        "annual": "Hello, I would like to subscribe to the Standard Plan with the Expert add-on (60,000 FCFA/year). Please provide more information."
+        "monthly": "Hello, I would like to subscribe to the Essential Plan with the Production add-on (7,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Essential Plan with the Production add-on (60,000 FCFA/year). Please provide more information."
       }
     },
     "products": {
