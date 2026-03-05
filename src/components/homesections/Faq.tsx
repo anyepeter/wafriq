@@ -1,10 +1,13 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
+import Link from 'next/link';
 import FaqAccordion from '@/components/FaqAccordion';
+import { getWhatsAppUrl } from '@/lib/whatsapp';
 
-export default function Faq() {
-  const t = useTranslations('faq');
 
+export default async function Faq() {
+  const t = await getTranslations('faq');
+  const w = await getTranslations('whatsappMessages');
   return (
     <section id="faq" className="py-16 bg-white">
       <div className="max-w-[1400px] mx-auto px-2 sm:px-6 lg:px-8">
@@ -17,8 +20,8 @@ export default function Faq() {
                   <Image
                     src="/images/faq1.webp"
                     alt="Wafriq Support"
-                    width={300}
-                    height={100}
+                    width={400}
+                    height={400}
                     className="object-contain w-auto h-full"
                   />
                 </div>
@@ -31,12 +34,14 @@ export default function Faq() {
                 </h2>
                 <p className="text-gray-600 text-sm ">
                   {t('subtitle')}{' '}
-                  <a
-                    href={`mailto:${t('email')}`}
+                  <Link
+                    href={getWhatsAppUrl(w('general'))}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-blue-500 hover:underline"
                   >
-                    {t('email')}
-                  </a>
+                    WhatsApp
+                  </Link>
                 </p>
               </div>
               <FaqAccordion />

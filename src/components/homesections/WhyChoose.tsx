@@ -7,7 +7,6 @@ type ReasonKey = 'local' | 'easy' | 'whatsapp' | 'tools' | 'support';
 
 export default function WhyChoose() {
   const t = useTranslations('whyChoose');
-
   const reasons: ReadonlyArray<{ key: ReasonKey }> = [
     { key: 'local' },
     { key: 'easy' },
@@ -15,7 +14,6 @@ export default function WhyChoose() {
     { key: 'tools' },
     { key: 'support' },
   ];
-
   return (
     <section className="relative py-16 lg:py-24 bg-blue-500 overflow-hidden">
       <div

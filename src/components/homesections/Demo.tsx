@@ -12,6 +12,7 @@ interface DemoProps {
     showIcon?: boolean;
 }
 
+
 export default function Demo({
     ctaSecondaryText,
     children,
@@ -46,7 +47,6 @@ export default function Demo({
             document.removeEventListener('keydown', handleKeyDown);
         };
     }, [showDemo]);
-
     return (
         <>
             <Button

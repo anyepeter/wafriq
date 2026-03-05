@@ -1,10 +1,9 @@
-import { useTranslations } from 'next-intl';
-import PricingToggle from '@/components/PricingToggle';
+import { getTranslations } from 'next-intl/server';
+import PricingToggle from '@/components/PricingPlan';
 import Image from 'next/image';
 
-export default function Pricing() {
-  const t = useTranslations('pricing');
-
+export default async function Pricing() {
+  const t = await getTranslations('pricing');
   return (
     <section id="pricing" className="py-16 lg:py-24 bg-white">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +21,7 @@ export default function Pricing() {
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
             {t('title')}{' '}
-            <span className="text-primary-500">7,000&nbsp;FCFA</span>.
+            <span className="text-primary-500">7,000&nbsp;FCFA.</span>
           </h2>
         </div>
         <PricingToggle />

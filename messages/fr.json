@@ -198,8 +198,7 @@
   },
   "faq": {
     "title": "Foire aux questions",
-    "subtitle": "Vous avez encore des questions ? Contactez notre équipe à",
-    "email": "support@wafriq.com",
+    "subtitle": "Vous avez encore des questions ? Contactez notre équipe sur",
     "questions": {
       "internet": {
         "question": "Est-ce que je dois avoir une connexion Internet pour utiliser Wafriq ?",

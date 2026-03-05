@@ -198,8 +198,7 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Still have questions? Contact our team at",
-    "email": "support@wafriq.com",
+    "subtitle": "Still have questions? Contact our team on",
     "questions": {
       "internet": {
         "question": "Do I need an Internet connection to use Wafriq?",
