@@ -48,7 +48,7 @@ export default async function Hero() {
             <div className="relative w-full max-w-lg mx-auto lg:max-w-none">
               <div className="relative z-10">
                 <Image
-                  src="/images/hero-image.png"
+                  src="/images/hero-image.webp"
                   alt="Wafriq POS System"
                   width={600}
                   height={600}

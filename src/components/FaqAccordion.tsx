@@ -46,6 +46,8 @@ export default function FaqAccordion(): JSX.Element {
           </div>
           <button onClick={() => toggleQuestion(index)}
             className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors bg-primary-100 text-primary-500`}
+            aria-label={t(`questions.${key}.question`)}
+            aria-expanded={openIndex === index}
           >
             {openIndex === index ? (
               <Minus className="w-4 h-4" />

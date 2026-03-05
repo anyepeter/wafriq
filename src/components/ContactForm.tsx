@@ -16,7 +16,7 @@ export default async function ContactForm() {
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-0 sm:px-6 lg:px-0">
                     <div className="relative h-full w-auto flex items-center justify-center order-1">
                         <Image
-                            src="/images/faq.png"
+                            src="/images/faq.webp"
                             alt="Wafriq Partner"
                             width={400}
                             height={500}

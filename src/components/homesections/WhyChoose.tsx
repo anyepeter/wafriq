@@ -21,7 +21,7 @@ export default function WhyChoose() {
       <div
         className="absolute inset-0 opacity-90"
         style={{
-          backgroundImage: 'url(/images/groupbg.png)',
+          backgroundImage: 'url(/images/groupbg.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
@@ -73,7 +73,7 @@ export default function WhyChoose() {
           <div className="relative h-full w-full max-w-[700px] mx-auto flex items-center justify-center lg:block">
             <div className="relative w-full aspect-[4/5]">
               <Image
-                src="/images/composition.png"
+                src="/images/composition.webp"
                 alt="Wafriq users"
                 fill
                 className="object-center lg:px-0 lg:py-0"

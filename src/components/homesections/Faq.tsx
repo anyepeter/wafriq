@@ -15,7 +15,7 @@ export default function Faq() {
                 <div className="absolute inset-0 rounded-2xl" />
                 <div className="relative h-full w-auto">
                   <Image
-                    src="/images/faq1.png"
+                    src="/images/faq1.webp"
                     alt="Wafriq Support"
                     width={300}
                     height={100}

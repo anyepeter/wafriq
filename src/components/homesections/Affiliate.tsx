@@ -51,7 +51,7 @@ export default function Affiliate(): JSX.Element {
           </div>
           <div className="relative aspect-[21/9] rounded-2xl overflow-hidden mb-8 bg-blue-100">
             <Image
-              src="/images/image.png"
+              src="/images/image.webp"
               alt="Affiliate Program"
               fill
               className="object-cover object-center"

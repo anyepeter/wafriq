@@ -56,7 +56,6 @@ export default function Features() {
                 alt="Feature Illustration"
                 className="object-cover brightness-110 contrast-110 saturate-110"
                 fill
-                unoptimized
               />
             </div>
             <FeatureCard
