@@ -7,9 +7,6 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [],
   },
-  experimental: {
-    optimizePackageImports: ['lucide-react', 'next-intl'],
-  },
 };
 
 export default withNextIntl(nextConfig);

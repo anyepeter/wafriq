@@ -56,7 +56,6 @@ interface LocaleLayoutProps {
   params: Promise<{ locale: string }>;
 }
 
-
 export default async function LocaleLayout({
   children,
   params,
@@ -67,19 +66,10 @@ export default async function LocaleLayout({
     notFound();
   }
   const messages = await getMessages();
-
-  // Only send messages needed by client components to reduce JS payload
-  const clientMessages = {
-    nav: messages.nav,
-    mobileMenu: messages.mobileMenu,
-    pricing: messages.pricing,
-    faq: messages.faq,
-    whatsappMessages: messages.whatsappMessages,
-  };
   return (
     <html lang={locale} className={`${manrope.variable} ${dmSans.variable}`}>
       <body className="antialiased">
-        <NextIntlClientProvider messages={clientMessages}>
+        <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
