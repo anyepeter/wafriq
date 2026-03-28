@@ -115,53 +115,60 @@
   "pricing": {
     "badge": "Pricing Plans",
     "title": "Manage your business like a pro starting from",
-    "titleHighlight": "60,000 FCFA",
+    "titleHighlight": "7,000 FCFA",
     "monthly": "Monthly",
     "annual": "Annual",
     "discount": "-30%",
     "perMonth": "/Month",
     "perYear": "/Year",
     "cta": "Order Now",
+    "popularBadge": "Most Popular",
+    "includes": "Includes",
     "plans": {
-      "standard": {
+      "essential": {
         "name": "Essential",
-        "description": "For young businesses that want to print receipts and track their sales",
-        "priceMonthly": "7,000 FCFA",
-        "priceAnnual": "60,000 FCFA"
+        "description": "Perfect for starting out — billing, sales tracking and team management",
+        "priceMonthly": "7,000",
+        "priceAnnual": "60,000"
       },
-      "pro": {
-        "name": "Inventory",
-        "description": "For stores and restaurants that want to print receipts and control their stock",
-        "priceMonthly": "7,000 FCFA",
-        "priceAnnual": "60,000 FCFA"
+      "inventory": {
+        "name": "Essential + Inventory",
+        "description": "Everything in Essential, plus full stock control and multi-checkout",
+        "priceMonthly": "14,000",
+        "priceAnnual": "120,000"
       },
-      "expert": {
-        "name": "Production",
-        "description": "For businesses with a high demand for sales, inventory, and marketing automation",
-        "priceMonthly": "7,000 FCFA",
-        "priceAnnual": "60,000 FCFA"
+      "production": {
+        "name": "Essential + Production",
+        "description": "Everything in Essential, plus barcode scanning, marketing and API access",
+        "priceMonthly": "14,000",
+        "priceAnnual": "120,000"
+      },
+      "complete": {
+        "name": "Complete",
+        "description": "The full Wafriq experience — every feature, every tool, maximum growth",
+        "priceMonthly": "21,000",
+        "priceAnnual": "180,000"
       }
     },
     "features": {
       "billing": "1 store included",
       "payments": "Sell unlimited products",
-      "expenses": "Unlimited connected team members",
+      "expenses": "Unlimited team members",
       "reports": "1 connected receipt printer",
       "budget": "Individual sales reports",
       "stats": "Individual user permissions",
-      "profitability": "1 receipt printer included (annual plan)",
+      "profitability": "1 receipt printer included (annual)",
       "forecasts": "Customer support Mon-Fri",
       "resources": "Stock management",
       "stock_alerts": "Automatic stock alerts",
       "multi_checkout": "Multiple checkouts for deeper sales analysis",
       "barcode_support": "Barcode/QR code scanner support",
-      "barcode_scanner": "1 barcode/QR code scanner included (annual plan)",
+      "barcode_scanner": "1 barcode/QR scanner included (annual)",
       "marketing_auto": "Marketing campaigns automation",
       "api_access": "Full API access",
-      "priority_support": "Priority customer support",
-      "essential_features": "Standard features"
+      "priority_support": "Priority customer support"
     },
-    "addonOptions": "Additional options"
+    "currency": "FCFA"
   },
   "shop": {
     "badge": "Our Shop",
@@ -264,17 +271,21 @@
   },
   "whatsappMessages": {
     "plans": {
-      "standard": {
+      "essential": {
         "monthly": "Hello, I would like to subscribe to the Essential Plan (7,000 FCFA/month). Please provide more information.",
         "annual": "Hello, I would like to subscribe to the Essential Plan (60,000 FCFA/year). Please provide more information."
       },
-      "pro": {
-        "monthly": "Hello, I would like to subscribe to the Essential Plan with the Inventory add-on (7,000 FCFA/month). Please provide more information.",
-        "annual": "Hello, I would like to subscribe to the Essential Plan with the Inventory add-on (60,000 FCFA/year). Please provide more information."
+      "inventory": {
+        "monthly": "Hello, I would like to subscribe to the Essential + Inventory Plan (14,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Essential + Inventory Plan (120,000 FCFA/year). Please provide more information."
       },
-      "expert": {
-        "monthly": "Hello, I would like to subscribe to the Essential Plan with the Production add-on (7,000 FCFA/month). Please provide more information.",
-        "annual": "Hello, I would like to subscribe to the Essential Plan with the Production add-on (60,000 FCFA/year). Please provide more information."
+      "production": {
+        "monthly": "Hello, I would like to subscribe to the Essential + Production Plan (14,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Essential + Production Plan (120,000 FCFA/year). Please provide more information."
+      },
+      "complete": {
+        "monthly": "Hello, I would like to subscribe to the Complete Plan (21,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Complete Plan (180,000 FCFA/year). Please provide more information."
       }
     },
     "products": {

@@ -21,7 +21,7 @@ export default async function Pricing() {
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
             {t('title')}{' '}
-            <span className="text-primary-500">7,000&nbsp;FCFA.</span>
+            <span className="text-primary-500">{t('titleHighlight')}&nbsp;FCFA.</span>
           </h2>
         </div>
         <PricingToggle />
