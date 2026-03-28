@@ -2,9 +2,12 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { MoveRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from '@/i18n/navigation';
+import ProductCard from '@/components/ProductCard';
+import { getWhatsAppUrl } from '@/lib/whatsapp';
 
 
-type ProductKey = 'printer' | 'stand' | 'tablet';
+type ProductKey = 'tablet' | 'printer' | 'stand';
 
 type Product = {
   key: ProductKey;
@@ -14,7 +17,12 @@ type Product = {
 
 export default function Shop() {
   const t = useTranslations('shop');
+  const w = useTranslations('whatsappMessages');
   const products: readonly Product[] = [
+    {
+      key: 'tablet',
+      image: '/images/image-1.png',
+    },
     {
       key: 'printer',
       image: '/images/image-3.png',
@@ -22,10 +30,6 @@ export default function Shop() {
     {
       key: 'stand',
       image: '/images/image-2.png',
-    },
-    {
-      key: 'tablet',
-      image: '/images/image-1.png',
     },
   ];
   return (
@@ -45,45 +49,22 @@ export default function Shop() {
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              {t('title')}
+              {t('landingTitle')}
             </h2>
           </div>
           <div className="flex justify-center items-center">
             <div className="w-full max-w-[400px] sm:max-w-[850px] lg:max-w-full grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
               {products.map((product) => (
-                <article
+                <ProductCard
                   key={product.key}
-                  className="bg-white rounded-lg overflow-hidden p-6 border border-gray-200"
-                >
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    {t(`products.${product.key}.name`)}
-                  </h3>
-                  <div className="relative aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden mb-4">
-                    <Image
-                      src={product.image}
-                      alt={t(`products.${product.key}.name`)}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
-                  <p className="text-base text-gray-600 font-semibold mb-2">
-                    {t('startingFrom')}{' '}
-                    <span className="text-primary-500 font-semibold">
-                      {t(`products.${product.key}.price`)}
-                    </span>
-                  </p>
-                  <p className="text-sm text-gray-500 mb-4">
-                    {t(`products.${product.key}.description`)}
-                  </p>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="w-full border-2 border-primary-500 text-primary-500 rounded-lg font-medium hover:bg-primary-500 hover:text-white transition-colors"
-                  >
-                    {t('cta')}
-                  </Button>
-                </article>
+                  image={product.image}
+                  name={t(`products.${product.key}.name`)}
+                  description={t(`products.${product.key}.description`)}
+                  price={t(`products.${product.key}.price`)}
+                  startingFromText={t('startingFrom')}
+                  ctaText={t('cta')}
+                  whatsappUrl={getWhatsAppUrl(w(`products.${product.key}`))}
+                />
               ))}
             </div>
           </div>
@@ -93,10 +74,10 @@ export default function Shop() {
               size="lg"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors"
             >
-              <a href="#products">
+              <Link href="/shop">
                 {t('viewMore')}
                 <MoveRight className="w-5 h-5" />
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

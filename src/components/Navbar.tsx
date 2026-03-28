@@ -1,20 +1,29 @@
-import { useTranslations } from 'next-intl';
+'use client';
+
 import Image from 'next/image';
-import { Link } from '@/i18n/navigation';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import MobileMenu from '@/components/MobileMenu';
+import { JSX } from 'react';
+import { Link } from '@/i18n/navigation';
+import { useTranslations } from 'next-intl';
+import { getWhatsAppUrl } from '@/lib/whatsapp';
 
-export default function Navbar() {
+interface NavLink {
+  href: string;
+  label: string;
+}
+
+export default function Navbar(): JSX.Element {
   const t = useTranslations('nav');
-
-  const navLinks = [
-    { href: '#features', label: t('features') },
-    { href: '#pricing', label: t('pricing') },
-    { href: '#shop', label: t('shop') },
-    { href: '#partner', label: t('partner') },
-    { href: '#demo', label: t('demo') },
+  const w = useTranslations('whatsappMessages');
+  const navLinks: NavLink[] = [
+    { href: '/#features', label: t('features') },
+    { href: '/#pricing', label: t('pricing') },
+    { href: '/shop', label: t('shop') },
+    { href: '/members', label: t('partner') },
+    // { href: '/demo', label: t('demo') },
+    { href: '/contact', label: t('contact') },
   ];
-
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-100">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,27 +40,30 @@ export default function Navbar() {
           </Link>
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-base font-medium transition-colors text-gray-600 hover:text-primary-500"
+                scroll={true}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="hidden lg:flex items-center gap-4">
             <LanguageSwitcher />
             <a
-              href="#order"
-              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium border rounded-lg hover:bg-blue-600 transition-colors"
+              href={getWhatsAppUrl(w('general'))}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium border rounded-lg hover:bg-blue-600 hover:text-white transition-colors"
             >
               {t('cta')}
             </a>
           </div>
           <div className="lg:hidden flex items-center gap-2">
             <LanguageSwitcher />
-            <MobileMenu navLinks={navLinks} ctaText={t('cta')} />
+            <MobileMenu navLinks={navLinks} ctaText={t('cta')} ctaUrl={getWhatsAppUrl(w('general'))} />
           </div>
         </div>
       </div>

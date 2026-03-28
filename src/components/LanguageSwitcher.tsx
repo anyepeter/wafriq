@@ -46,7 +46,7 @@ export default function LanguageSwitcher() {
         aria-haspopup="listbox"
       >
         <span className="text-lg">{currentLocale.flag}</span>
-        <span>{currentLocale.label}</span>
+        <span translate="no">{currentLocale.label}</span>
         <svg
           className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
@@ -79,7 +79,7 @@ export default function LanguageSwitcher() {
               aria-selected={loc.code === locale}
             >
               <span className="text-lg">{loc.flag}</span>
-              <span>{loc.label}</span>
+              <span translate="no">{loc.label}</span>
               {loc.code === locale && (
                 <svg
                   className="w-4 h-4 ml-auto"

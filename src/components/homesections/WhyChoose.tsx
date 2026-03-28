@@ -7,7 +7,6 @@ type ReasonKey = 'local' | 'easy' | 'whatsapp' | 'tools' | 'support';
 
 export default function WhyChoose() {
   const t = useTranslations('whyChoose');
-
   const reasons: ReadonlyArray<{ key: ReasonKey }> = [
     { key: 'local' },
     { key: 'easy' },
@@ -15,13 +14,12 @@ export default function WhyChoose() {
     { key: 'tools' },
     { key: 'support' },
   ];
-
   return (
     <section className="relative py-16 lg:py-24 bg-blue-500 overflow-hidden">
       <div
         className="absolute inset-0 opacity-90"
         style={{
-          backgroundImage: 'url(/images/groupbg.png)',
+          backgroundImage: 'url(/images/groupbg.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
@@ -59,10 +57,10 @@ export default function WhyChoose() {
                     </span>
                   </div>
                   <div className="flex-1 min-w-0 py-2">
-                    <h3 className="font-bold mb-1">
+                    <h3 className="font-bold mb-1 text-base">
                       {t(`reasons.${reason.key}.title`)}
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm sm:text-base">
                       {t(`reasons.${reason.key}.description`)}
                     </p>
                   </div>
@@ -73,7 +71,7 @@ export default function WhyChoose() {
           <div className="relative h-full w-full max-w-[700px] mx-auto flex items-center justify-center lg:block">
             <div className="relative w-full aspect-[4/5]">
               <Image
-                src="/images/composition.png"
+                src="/images/composition.webp"
                 alt="Wafriq users"
                 fill
                 className="object-center lg:px-0 lg:py-0"

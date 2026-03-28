@@ -5,6 +5,7 @@
     "shop": "Shop",
     "partner": "Become a Partner",
     "demo": "Watch Demo",
+    "contact": "Contact Us",
     "cta": "Order Now"
   },
   "hero": {
@@ -61,15 +62,16 @@
     },
     "shop": {
       "title": "Shop",
+      "tablet": "Android Sales Tablet",
       "printer": "Thermal Printer",
       "stand": "Cash Register Stand",
-      "tablet": "Sales Tablet"
+      "barcodeReader": "Barcode Reader"
     },
     "affiliate": {
       "title": "Affiliate Program",
       "partner": "Become a Partner"
     },
-    "copyright": "© 2025 Wafriq. All rights reserved.",
+    "copyright": "All rights reserved.",
     "privacy": "Privacy & Policy",
     "legal": "Legal",
     "terms": "Terms & Condition",
@@ -113,52 +115,77 @@
   "pricing": {
     "badge": "Pricing Plans",
     "title": "Manage your business like a pro starting from",
-    "titleHighlight": "5,000 FCFA",
+    "titleHighlight": "7,000 FCFA",
     "monthly": "Monthly",
     "annual": "Annual",
     "discount": "-30%",
     "perMonth": "/Month",
     "perYear": "/Year",
     "cta": "Order Now",
+    "popularBadge": "Most Popular",
+    "includes": "Includes",
     "plans": {
-      "standard": {
-        "name": "Standard Plan",
-        "description": "Ideal to simply start your business",
-        "priceMonthly": "5,000 FCFA",
-        "priceAnnual": "42,000 FCFA"
+      "essential": {
+        "name": "Essential",
+        "description": "Perfect for starting out — billing, sales tracking and team management",
+        "priceMonthly": "7,000",
+        "priceAnnual": "60,000"
       },
-      "pro": {
-        "name": "Pro Plan",
-        "description": "For businesses that want to go further",
-        "priceMonthly": "10,000 FCFA",
-        "priceAnnual": "84,000 FCFA"
+      "inventory": {
+        "name": "Essential + Inventory",
+        "description": "Everything in Essential, plus full stock control and multi-checkout",
+        "priceMonthly": "14,000",
+        "priceAnnual": "120,000"
       },
-      "expert": {
-        "name": "Expert Plan",
-        "description": "Complete package to fully equip yourself",
-        "priceMonthly": "15,000 FCFA",
-        "priceAnnual": "126,000 FCFA"
+      "production": {
+        "name": "Essential + Production",
+        "description": "Everything in Essential, plus barcode scanning, marketing and API access",
+        "priceMonthly": "14,000",
+        "priceAnnual": "120,000"
+      },
+      "complete": {
+        "name": "Complete",
+        "description": "The full Wafriq experience — every feature, every tool, maximum growth",
+        "priceMonthly": "21,000",
+        "priceAnnual": "180,000"
       }
     },
     "features": {
-      "billing": "Billing module",
-      "payments": "Payment management",
-      "expenses": "Expense tracking",
-      "reports": "Financial reports",
-      "budget": "Budget planning",
-      "stats": "Sales statistics",
-      "profitability": "Profitability analysis",
-      "forecasts": "Financial forecasts",
-      "resources": "Financial resource management"
-    }
+      "billing": "1 store included",
+      "payments": "Sell unlimited products",
+      "expenses": "Unlimited team members",
+      "reports": "1 connected receipt printer",
+      "budget": "Individual sales reports",
+      "stats": "Individual user permissions",
+      "profitability": "1 receipt printer included (annual)",
+      "forecasts": "Customer support Mon-Fri",
+      "resources": "Stock management",
+      "stock_alerts": "Automatic stock alerts",
+      "multi_checkout": "Multiple checkouts for deeper sales analysis",
+      "barcode_support": "Barcode/QR code scanner support",
+      "barcode_scanner": "1 barcode/QR scanner included (annual)",
+      "marketing_auto": "Marketing campaigns automation",
+      "api_access": "Full API access",
+      "priority_support": "Priority customer support"
+    },
+    "currency": "FCFA"
   },
   "shop": {
     "badge": "Our Shop",
-    "title": "Equip yourself like a pro, without breaking the bank.",
+    "landingTitle": "Equip yourself like a pro, without breaking the bank.",
+    "pageTitle": "Equip your point of sale with",
+    "pageTitleHighlight": "100% compatible",
+    "pageTitleEnd": "Wafriq equipment",
+    "description": "Barcode readers, sales tablets... Discover all our professional equipment selected for you.",
     "cta": "Order Now",
     "viewMore": "View more products",
     "startingFrom": "Starting from",
     "products": {
+      "tablet": {
+        "name": "Android Sales Tablet",
+        "price": "40,000 FCFA",
+        "description": "Manage your business smoothly, wherever you are."
+      },
       "printer": {
         "name": "Thermal Printer",
         "price": "25,000 FCFA",
@@ -169,17 +196,16 @@
         "price": "10,000 FCFA",
         "description": "An elegant and practical stand for your point of sale."
       },
-      "tablet": {
-        "name": "Android Sales Tablet",
-        "price": "40,000 FCFA",
-        "description": "Manage your business smoothly, wherever you are."
+      "barcodeReader": {
+        "name": "Barcode Reader",
+        "price": "15,000 FCFA",
+        "description": "Scan products quickly and reliably."
       }
     }
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Still have questions? Contact our team at",
-    "email": "support@wafriq.com",
+    "subtitle": "Still have questions? Contact our team on",
     "questions": {
       "internet": {
         "question": "Do I need an Internet connection to use Wafriq?",
@@ -206,8 +232,7 @@
   "affiliate": {
     "title": "Recommend Wafriq. Earn money. It's that simple.",
     "description": "Do you know merchants, restaurateurs or vendors who still struggle with notebooks? Help them go digital and get rewarded for each signup.",
-    "emailPlaceholder": "Enter your email address",
-    "submit": "Submit",
+    "whatsappMe": "WhatsApp Me",
     "ctaTitle": "Ready to earn by sharing a useful tool?",
     "becomeAffiliate": "Become an affiliate now",
     "affiliateSubtitle": "Registration is free. The earnings are real.",
@@ -222,6 +247,74 @@
       "commission": "Up to 20% commission",
       "bonus": "Additional bonuses if you reach annual milestones",
       "tracking": "Real-time tracking of your earnings and affiliates"
+    }
+  },
+  "membersPage": {
+    "nav": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "shop": "Shop",
+      "affiliate": "Affiliate Partnership",
+      "cta": "Get Started Now"
+    },
+    "hero": {
+      "titleStart": "Become a partner of Wafriq, recommend our solution to your network and earn up to",
+      "highlight": "25,000 FCFA",
+      "titleEnd": "with each sale.",
+      "description": "Recommend Wafriq to any merchant or business. For any customer who signs up, you receive a commission on each sale. It's simple, fair and transparent.",
+      "cta": "Join after watching"
+    },
+    "tagline": {
+      "title": "Recommend Wafriq",
+      "subtitle": "Earn money. It's that simple."
+    }
+  },
+  "whatsappMessages": {
+    "plans": {
+      "essential": {
+        "monthly": "Hello, I would like to subscribe to the Essential Plan (7,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Essential Plan (60,000 FCFA/year). Please provide more information."
+      },
+      "inventory": {
+        "monthly": "Hello, I would like to subscribe to the Essential + Inventory Plan (14,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Essential + Inventory Plan (120,000 FCFA/year). Please provide more information."
+      },
+      "production": {
+        "monthly": "Hello, I would like to subscribe to the Essential + Production Plan (14,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Essential + Production Plan (120,000 FCFA/year). Please provide more information."
+      },
+      "complete": {
+        "monthly": "Hello, I would like to subscribe to the Complete Plan (21,000 FCFA/month). Please provide more information.",
+        "annual": "Hello, I would like to subscribe to the Complete Plan (180,000 FCFA/year). Please provide more information."
+      }
+    },
+    "products": {
+      "tablet": "Hello, I would like to order an Android Sales Tablet (40,000 FCFA). Please provide more information.",
+      "printer": "Hello, I would like to order a Thermal Printer (25,000 FCFA). Please provide more information.",
+      "stand": "Hello, I would like to order a Cash Register Stand (10,000 FCFA). Please provide more information.",
+      "barcodeReader": "Hello, I would like to order a Barcode Reader (15,000 FCFA). Please provide more information."
+    },
+    "affiliate": "Hello, I would like to become a Wafriq affiliate partner. Please provide more information.",
+    "general": "Hello, I am interested in the Wafriq POS system. Please provide more information."
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "description": "Have a question? Chat with us directly on WhatsApp for an immediate response!",
+    "whatsappTitle": "Chat with us",
+    "whatsappDescription": "Get an immediate response from our team.",
+    "whatsappCta": "Chat on WhatsApp",
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "city": "City / Region",
+      "cityPlaceholder": "Your city / region",
+      "profession": "Profession or current activity (optional)",
+      "professionPlaceholder": "Profession or current activity (optional)",
+      "submit": "Send"
     }
   }
 }

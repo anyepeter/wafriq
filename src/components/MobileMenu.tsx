@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 interface NavLink {
   href: string;
@@ -11,9 +12,11 @@ interface NavLink {
 interface MobileMenuProps {
   navLinks: NavLink[];
   ctaText: string;
+  ctaUrl: string;
 }
 
-export default function MobileMenu({ navLinks, ctaText }: MobileMenuProps) {
+
+export default function MobileMenu({ navLinks, ctaText, ctaUrl }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const t = useTranslations('mobileMenu');
   return (
@@ -62,9 +65,8 @@ export default function MobileMenu({ navLinks, ctaText }: MobileMenuProps) {
         />
       )}
       <div
-        className={`fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="flex flex-col h-full">
           <div className="flex items-center justify-between p-4 border-b border-gray-100">
@@ -91,24 +93,26 @@ export default function MobileMenu({ navLinks, ctaText }: MobileMenuProps) {
           </div>
           <nav className="flex-1 overflow-y-auto py-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
                 className="block px-6 py-3 text-gray-600 border-b border-gray-200 hover:text-gray-900 hover:bg-gray-50 transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="p-4">
-            <a
-              href="#order"
+            <Link
+              href={ctaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
               className="block w-full text-center px-6 py-3 rounded-lg border transition-colors font-medium"
             >
               {ctaText}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

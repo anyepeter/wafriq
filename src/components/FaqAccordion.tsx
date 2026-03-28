@@ -1,16 +1,15 @@
 'use client';
 
-import { useState } from 'react';
-import { useTranslations } from 'next-intl';
 import { Plus, Minus } from 'lucide-react';
+import { useState, JSX } from 'react';
+import { useTranslations } from 'next-intl';
 
-export default function FaqAccordion() {
+
+export default function FaqAccordion(): JSX.Element {
   const t = useTranslations('faq');
   const [openIndex, setOpenIndex] = useState<number>(0);
-
   const questions = ['internet', 'devices', 'hardware', 'restaurants', 'affiliate'];
-
-  const toggleQuestion = (index: number) => {
+  const toggleQuestion = (index: number): void => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 
@@ -47,6 +46,8 @@ export default function FaqAccordion() {
           </div>
           <button onClick={() => toggleQuestion(index)}
             className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors bg-primary-100 text-primary-500`}
+            aria-label={t(`questions.${key}.question`)}
+            aria-expanded={openIndex === index}
           >
             {openIndex === index ? (
               <Minus className="w-4 h-4" />

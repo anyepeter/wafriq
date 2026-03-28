@@ -103,3 +103,14 @@ html {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Billing toggle: show/hide monthly vs annual content */
+[data-annual="false"] .annual-content,
+[data-annual="true"] .monthly-content {
+  display: none;
+}
+
+[data-annual="false"] .monthly-content,
+[data-annual="true"] .annual-content {
+  display: block;
+}

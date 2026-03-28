@@ -1,40 +1,41 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import GoToTopButton from '@/components/GoToTopButton';
 
-export default function Footer() {
-  const t = useTranslations('footer');
+export default async function Footer() {
+  const t = await getTranslations('footer');
 
   const footerSections = [
     {
       title: t('home.title'),
       links: [
-        { label: t('home.features'), href: '#features' },
-        { label: t('home.pricing'), href: '#pricing' },
-        { label: t('home.shop'), href: '#shop' },
-        { label: t('home.faq'), href: '#faq' },
+        { label: t('home.features'), href: '/#features' },
+        { label: t('home.pricing'), href: '/#pricing' },
+        { label: t('home.shop'), href: '/#shop' },
+        { label: t('home.faq'), href: '/#faq' },
       ],
     },
     {
       title: t('features.title'),
       links: [
-        { label: t('features.billing'), href: '#billing' },
-        { label: t('features.stock'), href: '#stock' },
-        { label: t('features.whatsapp'), href: '#whatsapp' },
+        { label: t('features.billing'), href: '/#features' },
+        { label: t('features.stock'), href: '/#features' },
+        { label: t('features.whatsapp'), href: '/#features' },
       ],
     },
     {
       title: t('shop.title'),
       links: [
-        { label: t('shop.printer'), href: '#printer' },
-        { label: t('shop.stand'), href: '#stand' },
-        { label: t('shop.tablet'), href: '#tablet' },
+        { label: t('shop.tablet'), href: '/shop' },
+        { label: t('shop.printer'), href: '/shop' },
+        { label: t('shop.stand'), href: '/shop' },
+        { label: t('shop.barcodeReader'), href: '/shop' },
       ],
     },
     {
       title: t('affiliate.title'),
-      links: [{ label: t('affiliate.partner'), href: '#partner' }],
+      links: [{ label: t('affiliate.partner'), href: '/members' }],
     },
   ];
 
@@ -113,12 +114,12 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {section.links.map((link) => (
                     <li key={link.label}>
-                      <a
+                      <Link
                         href={link.href}
                         className="text-sm text-gray-400 hover:text-white transition-colors"
                       >
                         {link.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -128,28 +129,8 @@ export default function Footer() {
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800">
           <p className="text-sm text-gray-500 mb-4 md:mb-0">
-            {t('copyright')}
+            &copy; {new Date().getFullYear()} Wafriq. {t('copyright')}
           </p>
-          <div className="flex flex-wrap items-center gap-6">
-            <a
-              href="#privacy"
-              className="text-sm text-gray-400 hover:text-white transition-colors"
-            >
-              {t('privacy')}
-            </a>
-            <a
-              href="#legal"
-              className="text-sm text-gray-400 hover:text-white transition-colors"
-            >
-              {t('legal')}
-            </a>
-            <a
-              href="#terms"
-              className="text-sm text-gray-400 hover:text-white transition-colors"
-            >
-              {t('terms')}
-            </a>
-          </div>
           <GoToTopButton label={t('goToTop')} />
         </div>
       </div>

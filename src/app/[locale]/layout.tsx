@@ -6,7 +6,7 @@ import { routing } from '@/i18n/routing';
 import { Manrope, DM_Sans } from 'next/font/google';
 import '../globals.css';
 
-// Configure fonts
+
 const manrope = Manrope({
   subsets: ['latin'],
   variable: '--font-manrope',
@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     description:
       'Révolutionnez votre quotidien avec un système de caisse innovant, conçu pour les commerces africains.',
   },
+  icons: {
+    icon: '/images/Logo.png',
+  },
 };
 
 interface LocaleLayoutProps {
@@ -62,9 +65,7 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as 'fr' | 'en')) {
     notFound();
   }
-
   const messages = await getMessages();
-
   return (
     <html lang={locale} className={`${manrope.variable} ${dmSans.variable}`}>
       <body className="antialiased">

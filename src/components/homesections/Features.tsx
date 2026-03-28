@@ -54,7 +54,7 @@ export default function Features() {
               <Image
                 src="/images/illustration4.png"
                 alt="Feature Illustration"
-                className="object-cover"
+                className="object-cover brightness-110 contrast-110 saturate-110"
                 fill
               />
             </div>
@@ -94,7 +94,7 @@ export default function Features() {
             <Image
               src="/images/illustration4.png"
               alt="Feature Illustration"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover brightness-110 contrast-110 saturate-110"
               width={280}
               height={280}
             />
@@ -139,9 +139,12 @@ function FeatureCard({
         <Image
           src={image}
           alt={title}
-          width={600}
+          width={700}
           height={600}
-          className={`w-full h-auto object-cover rounded-x 
+          className={`w-full h-auto object-cover rounded-x
+            ${image.endsWith('.png')
+              ? 'brightness-100 contrast-108 saturate-120'
+              : ''}
             ${image === "images/illustration3.svg"
               ? '-mt-18'
               : ''}
@@ -151,10 +154,10 @@ function FeatureCard({
         />
       </div>
       <div className='flex flex-col w-full h-full justify-center gap-3'>
-        <h3 className="text-2xl font-bold text-gray-900 leading-snug">
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug">
           {title}
         </h3>
-        <p className="text-gray-600 text-[16px] leading-relaxed">
+        <p className="text-gray-600 text-[14px] sm:text-[16px] leading-relaxed">
           {description}
         </p>
       </div>
